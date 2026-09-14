@@ -10,6 +10,9 @@ const AREAS = { CN: 'zh_CN', EN: 'en_US', JP: 'ja_JP', KR: 'ko_KR', TW: 'zh_TW'}
 const TAG_COLOR = { 101: '#db6893', 102: '#7d81e3', 103: '#41cbaf' };
 const GRADE = { 1: 5, 2: 4, 3: 3 };
 
+/** changelog 保留天数 */
+const KEEP_DAYS = 14;
+
 const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf-8'));
 
 /** 加载指定区域和语言的数据 */
@@ -150,7 +153,7 @@ function diffEvents(newData, oldData) {
     if (!newMap.has(key)) removedIds.add(oldEv.eventId);
   }
 
-  /** 已算新增的不再算修改 */
+  /** 已算新增的不算修改 */
   for (const id of addedIds) modifiedIds.delete(id);
 
   return {
@@ -168,6 +171,36 @@ function diffEvents(newData, oldData) {
   };
 }
 
+/** 判断 changelog 是否有实际变更内容 */
+function hasChange(cl) {
+  return (cl.added?.length ?? 0) > 0 || (cl.modified?.length ?? 0) > 0;
+}
+
+/** 判断 changelog.json 是否存在且已超过 KEEP_DAYS 天 */
+function isExpired(filePath, now) {
+  if (!fs.existsSync(filePath)) return true;
+  const mtime = fs.statSync(filePath).mtimeMs;
+  const cutoff = now.getTime() - KEEP_DAYS * 24 * 60 * 60 * 1000;
+  return mtime <= cutoff;
+}
+
+/** 写入 changelog.json 的策略 */
+function writeChangelog(newChangelog, now) {
+  /** 有新变更覆盖写入,刷新 mtime */
+  if (hasChange(newChangelog)) {
+    fs.writeFileSync(CHANGELOG_PATH, JSON.stringify(newChangelog, null, 2));
+    console.log(`[gen] changelog has change -> written`);
+    return;
+  }
+  /** 无变更且已过期,覆盖写入空数据 */
+  if (isExpired(CHANGELOG_PATH, now)) {
+    fs.writeFileSync(CHANGELOG_PATH, JSON.stringify(newChangelog, null, 2));
+    console.log(`[gen] changelog no change but expired (>${KEEP_DAYS}d) → written empty`);
+    return;
+  }
+  /** 无变更且未过期,跳过，保留旧文件 */
+  console.log(`[gen] changelog no change, still fresh -> kept as-is`);
+}
 
 (async () => {
   /** 生成新数据 */
@@ -191,16 +224,15 @@ function diffEvents(newData, oldData) {
   /** 对比变更 */
   const { changelog, counts } = diffEvents(newData, oldData);
 
-  /** 4. 确保 data 目录存在 */
+  /** 确保 data 目录存在 */
   fs.mkdirSync(DATA_DIR, { recursive: true });
 
   /** 写入新数据覆盖旧的 */
   fs.writeFileSync(DATA_PATH, JSON.stringify(newData, null, 2));
-  console.log(`[gen] written：${DATA_PATH}`);
+  console.log(`[gen] written: ${DATA_PATH}`);
 
-  /** 写入 changelog.json */
-  fs.writeFileSync(CHANGELOG_PATH, JSON.stringify(changelog, null, 2));
-  console.log(`[gen] written：${CHANGELOG_PATH}`);
+  /** 按策略写入 changelog.json */
+  writeChangelog(changelog, new Date());
 
   /** 打印统计信息 */
   console.log('');
