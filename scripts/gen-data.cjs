@@ -196,11 +196,11 @@ function diffEvents(newData, oldData) {
 
   /** 写入新数据覆盖旧的 */
   fs.writeFileSync(DATA_PATH, JSON.stringify(newData, null, 2));
-  console.log(`[gen] 已写入：${DATA_PATH}`);
+  console.log(`[gen] written：${DATA_PATH}`);
 
   /** 写入 changelog.json */
   fs.writeFileSync(CHANGELOG_PATH, JSON.stringify(changelog, null, 2));
-  console.log(`[gen] 已写入：${CHANGELOG_PATH}`);
+  console.log(`[gen] written：${CHANGELOG_PATH}`);
 
   /** 打印统计信息 */
   console.log('');
