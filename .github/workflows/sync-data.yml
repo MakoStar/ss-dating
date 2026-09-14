@@ -1,65 +1,71 @@
-name: Sync data entry
+name: Generate Data
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [data-updated]
 
 permissions:
   contents: write
 
+concurrency:
+  group: gen-data
+  cancel-in-progress: false
+
 env:
-  CACHE_DATA_REPO_DIR: ss-data
-  RESTORE_DATA_REPO_KEY_PREFIX: ss-data-repo-
+  DATA_REPO_DIR: ss-data
+  DATA_REPO_URL: https://github.com/MakoStar/ss-data.git
 
 jobs:
-  prepare-job:
+  gen:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+      - name: Checkout main repo
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          
+          token: ${{ secrets.GH_TOKEN }}
+
       - name: Clone data repo
         run: |
-          TARGET_REPO="${{ env.CACHE_DATA_REPO_DIR }}"
-          rm -rf "$TARGET_REPO" || true
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/MakoStar/ss-data.git "$TARGET_REPO"
-          
-          rm -rf "$TARGET_REPO/.git"
-          rm -f "$TARGET_REPO/LICENSE" "$TARGET_REPO/README.md"
-          
-          echo "Final pure data contents:"
-          ls -la "$TARGET_REPO"
+          TARGET="${{ env.DATA_REPO_DIR }}"
+          rm -rf "$TARGET" || true
+
+          git clone --depth 1 \
+            https://x-access-token:${{ secrets.GH_TOKEN }}@${DATA_REPO_URL#https://} \
+            "$TARGET"
+
+          rm -rf "$TARGET/.git"
+          rm -f  "$TARGET/LICENSE" "$TARGET/README.md"
+
+          echo "data repo content："
+          ls -la "$TARGET"
         shell: bash
 
-      - name: Check if data exists
-        id: check_data
-        run: |
-          TARGET_REPO="${{ env.CACHE_DATA_REPO_DIR }}"
-          if [ -d "$TARGET_REPO" ] && [ -n "$(ls -A "$TARGET_REPO" 2>/dev/null)" ]; then
-            echo "valid=true" >> "$GITHUB_OUTPUT"
-            echo "Data directory has content"
-          else
-            echo "valid=false" >> "$GITHUB_OUTPUT"
-            echo "Data directory is empty or missing, skipping cache save"
-          fi
-        shell: bash
-
-      - name: Save data cache
-        if: steps.check_data.outputs.valid == 'true'
-        uses: actions/cache/save@v6
+      - uses: actions/setup-node@v6
         with:
-          path: "${{ env.CACHE_DATA_REPO_DIR }}"
-          key: "${{ env.RESTORE_DATA_REPO_KEY_PREFIX }}${{ hashFiles(env.CACHE_DATA_REPO_DIR) }}"
+          node-version: 20
+          cache: npm
 
-      # - name: Trigger workflow
-      #   if: steps.check_data.outputs.valid == 'true'
-      #   uses: benc-uk/workflow-dispatch@v1
-      #   with:
-      #     repo: MakoStar/ss-bwiki
-      #     workflow: test-script.yml
-      #     token: ${{ secrets.GH_TOKEN }}
-        
+      - name: Install deps
+        run: npm ci
+
+      - name: Generate data
+        run: node scripts/gen-data.cjs
+
+      - name: Commit changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/dating-events.json data/changelog.json
+
+          if git diff --cached --quiet; then
+            echo "unchanged, skipping commit"
+            exit 0
+          fi
+
+          git commit -m "chore(data): regenerate dating-events & changelog"
+          git push
+        shell: bash
