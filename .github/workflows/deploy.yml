@@ -33,7 +33,7 @@ jobs:
 
       - run: pnpm run build
 
-      - uses: actions/upload-pages-artifact@v6
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
