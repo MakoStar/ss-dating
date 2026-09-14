@@ -1,0 +1,61 @@
+---
+interface Props {
+  hasGrade: boolean;
+  hasJob: boolean;
+  hasChangelog: boolean;
+  allChars: string;
+  allLandmarks: string;
+  allGrades: string;
+  allJobs: string;
+  allChanges: string;
+  changeAdded: string;
+  changeModified: string;
+  reset: string;
+}
+
+const {
+  hasGrade,
+  hasJob,
+  hasChangelog,
+  allChars,
+  allLandmarks,
+  allGrades,
+  allJobs,
+  allChanges,
+  changeAdded,
+  changeModified,
+  reset,
+} = Astro.props;
+---
+
+<div class="filters-row">
+  <select id="char-filter">
+    <option value="" data-i18n="allChars">{allChars}</option>
+  </select>
+
+  <select id="landmark-filter">
+    <option value="" data-i18n="allLandmarks">{allLandmarks}</option>
+  </select>
+
+  {hasGrade && (
+    <select id="grade-filter">
+      <option value="" data-i18n="allGrades">{allGrades}</option>
+    </select>
+  )}
+
+  {hasJob && (
+    <select id="job-filter">
+      <option value="" data-i18n="allJobs">{allJobs}</option>
+    </select>
+  )}
+
+  {hasChangelog && (
+    <select id="change-filter">
+      <option value="" data-i18n="allChanges">{allChanges}</option>
+      <option value="added" data-i18n="changeAdded">{changeAdded}</option>
+      <option value="modified" data-i18n="changeModified">{changeModified}</option>
+    </select>
+  )}
+
+  <button id="reset" type="button" data-i18n="reset">{reset}</button>
+</div>

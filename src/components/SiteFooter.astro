@@ -1,0 +1,45 @@
+---
+interface Props {
+  thanks: string;
+  about: string;
+  repo: string;
+  copy: string;
+}
+
+const { thanks, about, repo, copy } = Astro.props;
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="nav-dot" aria-hidden="true"></span>
+      <span>Stella Dating Events</span>
+    </div>
+
+    <p class="footer-text" data-i18n="footerThanks">{thanks}</p>
+    <p class="footer-text" data-i18n="footerAbout">{about}</p>
+
+    <div class="footer-links">
+      <a
+        href="https://github.com/torikushiii/StellaSoraAPI"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-link"
+      >
+        <span aria-hidden="true">⚡</span>
+        <span>StellaSoraAPI</span>
+      </a>
+      <a
+        href="https://github.com/MakoStar/ss-dating"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-link"
+      >
+        <span aria-hidden="true">📦</span>
+        <span data-i18n="footerRepo">{repo}</span>
+      </a>
+    </div>
+
+    <p class="footer-copy" data-i18n="footerCopy">{copy}</p>
+  </div>
+</footer>

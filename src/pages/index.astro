@@ -1,0 +1,93 @@
+---
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/nav.css';
+import '../styles/filters.css';
+import '../styles/cards.css';
+import '../styles/site-footer.css';
+import '../styles/responsive.css';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TopNav from '../components/TopNav.astro';
+import PageHeader from '../components/PageHeader.astro';
+import AreaTabs from '../components/AreaTabs.astro';
+import FiltersRow from '../components/FiltersRow.astro';
+import EventGrid from '../components/EventGrid.astro';
+import EmptyState from '../components/EmptyState.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+
+import type { AreaKey } from '../lib/constants';
+import { t } from '../lib/i18n';
+import { buildRows } from '../lib/server/buildRows';
+
+const { rows, areaCounts, hasGrade, hasJob, hasChangelog } = buildRows();
+
+const areas = [...new Set(rows.map((r) => r.area))] as AreaKey[];
+const initialArea = areas[0] ?? 'CN';
+const initialCount = areaCounts[initialArea] ?? 0;
+
+const ssrTitle = t('CN', 'title');
+const ssrSubtitle = t('CN', 'subtitle', initialCount);
+const ssr = {
+  allChars: t('CN', 'allChars'),
+  allLandmarks: t('CN', 'allLandmarks'),
+  allGrades: t('CN', 'allGrades'),
+  allJobs: t('CN', 'allJobs'),
+  allChanges: t('CN', 'allChanges'),
+  changeAdded: t('CN', 'changeAdded'),
+  changeModified: t('CN', 'changeModified'),
+  searchPlaceholder: t('CN', 'searchPlaceholder'),
+  reset: t('CN', 'reset'),
+  empty: t('CN', 'empty'),
+  footerThanks: t('CN', 'footerThanks'),
+  footerAbout: t('CN', 'footerAbout'),
+  footerRepo: t('CN', 'footerRepo'),
+  footerCopy: t('CN', 'footerCopy'),
+};
+---
+
+<BaseLayout title={ssrTitle}>
+  <TopNav searchPlaceholder={ssr.searchPlaceholder} />
+
+  <div class="container">
+    <PageHeader title={ssrTitle} subtitle={ssrSubtitle} count={initialCount} />
+
+    <AreaTabs areas={areas} />
+
+    <FiltersRow
+      hasGrade={hasGrade}
+      hasJob={hasJob}
+      hasChangelog={hasChangelog}
+      allChars={ssr.allChars}
+      allLandmarks={ssr.allLandmarks}
+      allGrades={ssr.allGrades}
+      allJobs={ssr.allJobs}
+      allChanges={ssr.allChanges}
+      changeAdded={ssr.changeAdded}
+      changeModified={ssr.changeModified}
+      reset={ssr.reset}
+    />
+
+    <EventGrid
+      rows={rows}
+      changeAdded={ssr.changeAdded}
+      changeModified={ssr.changeModified}
+    />
+
+    <EmptyState text={ssr.empty} />
+  </div>
+
+  <SiteFooter
+    thanks={ssr.footerThanks}
+    about={ssr.footerAbout}
+    repo={ssr.footerRepo}
+    copy={ssr.footerCopy}
+  />
+
+  <script type="application/json" id="area-counts" set:html={JSON.stringify(areaCounts)} />
+
+  <script>
+    import { initApp } from '../lib/client/app';
+    initApp();
+  </script>
+</BaseLayout>

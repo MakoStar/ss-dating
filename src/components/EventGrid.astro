@@ -1,0 +1,25 @@
+---
+import EventCard from './EventCard.astro';
+import type { Row } from '../lib/types';
+
+interface Props {
+  rows: Row[];
+  changeAdded: string;
+  changeModified: string;
+}
+
+const { rows, changeAdded, changeModified } = Astro.props;
+---
+
+<div id="grid" class="grid">
+  {
+    rows.map((r, i) => (
+      <EventCard
+        row={r}
+        index={i}
+        changeAdded={changeAdded}
+        changeModified={changeModified}
+      />
+    ))
+  }
+</div>

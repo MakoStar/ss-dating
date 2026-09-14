@@ -1,0 +1,127 @@
+---
+import { ASSET_BASE } from '../lib/constants';
+import { avatarName, starText } from '../lib/helpers';
+import type { Row } from '../lib/types';
+
+interface Props {
+  row: Row;
+  index: number;
+  changeAdded: string;
+  changeModified: string;
+}
+
+const { row: r, index, changeAdded, changeModified } = Astro.props;
+
+const cardVars = [
+  `--i:${Math.min(index, 24)}`,
+  r.charColor ? `--char-color:${r.charColor}` : null,
+  r.charTagColor ? `--tag-color:${r.charTagColor}` : null,
+]
+  .filter(Boolean)
+  .join(';');
+
+const stars = starText(r.charGrade);
+const avatar = avatarName(r);
+---
+
+<article
+  class="card"
+  style={cardVars}
+  data-area={r.area}
+  data-char-id={String(r.charId)}
+  data-event-id={String(r.eventId)}
+  data-char-name={r.charName ?? ''}
+  data-char-grade={r.charGrade != null ? String(r.charGrade) : ''}
+  data-char-job={r.charJob ?? ''}
+  data-landmark-id={String(r.landmarkId)}
+  data-landmark-name={r.landmarkName ?? ''}
+  data-change={r.changeType}
+  data-search={r.searchIndex}
+>
+  {
+    r.eventCg && (
+      <div class="card-media">
+        <img
+          class="card-cg"
+          src={`${ASSET_BASE}/${r.eventCg}.png`}
+          alt={r.eventName ?? 'Event CG'}
+          loading="lazy"
+          decoding="async"
+          width="400"
+          height="225"
+        />
+        {r.changeType === 'added' && (
+          <span class="chip chip-new" data-i18n="changeAdded">
+            {changeAdded}
+          </span>
+        )}
+        {r.changeType === 'modified' && (
+          <span class="chip chip-mod" data-i18n="changeModified">
+            {changeModified}
+          </span>
+        )}
+      </div>
+    )
+  }
+
+  <div class="card-body">
+    <h3>{r.eventName || '(unknown)'}</h3>
+
+    <div class="meta">
+      {
+        avatar && (
+          <img
+            class="char-avatar"
+            src={`${ASSET_BASE}/${avatar}.png`}
+            alt={r.charName ?? ''}
+            loading="lazy"
+            decoding="async"
+            width="24"
+            height="24"
+          />
+        )
+      }
+
+      {
+        r.charName && (
+          <span
+            class="badge badge-char"
+            style={r.charColor ? `--char-color:${r.charColor}` : undefined}
+          >
+            {r.charName}
+          </span>
+        )
+      }
+
+      {
+        stars && (
+          <span class="badge badge-stars" aria-label={`${r.charGrade} star`}>
+            {stars}
+          </span>
+        )
+      }
+
+      {
+        r.charJob && (
+          <span
+            class="badge badge-job"
+            style={r.charTagColor ? `--tag-color:${r.charTagColor}` : undefined}
+          >
+            {r.charJob}
+          </span>
+        )
+      }
+
+      {r.landmarkName && <span class="badge badge-alt">{r.landmarkName}</span>}
+    </div>
+
+    {r.eventClue && <p class="clue">{r.eventClue}</p>}
+    {r.eventOption && <p class="option">{r.eventOption}</p>}
+
+    <footer>
+      <code>char {r.charId}</code>
+      <code>#{r.eventId}</code>
+      {r.eventCg && <code>{r.eventCg}</code>}
+    </footer>
+  </div>
+</article>

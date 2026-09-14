@@ -1,0 +1,14 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  count: number;
+}
+
+const { title, subtitle, count } = Astro.props;
+---
+
+<header class="page-header">
+  <h1 data-i18n="title">{title}</h1>
+  <p data-i18n="subtitle" data-i18n-count={String(count)}>{subtitle}</p>
+</header>

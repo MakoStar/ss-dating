@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html,
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Noto Sans SC", "Helvetica Neue", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.bg-aura {
+  position: fixed;
+  inset: -30%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(38% 38% at 18% 12%, var(--aura-a), transparent 62%),
+    radial-gradient(32% 32% at 82% 22%, var(--aura-b), transparent 62%),
+    radial-gradient(30% 30% at 50% 88%, var(--aura-a), transparent 62%);
+  filter: blur(40px);
+  animation: auraDrift 26s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes auraDrift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(3%, -3%, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(-3%, 2%, 0) scale(1.04);
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+  animation: pageIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  letter-spacing: -0.02em;
+}
+
+.page-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}

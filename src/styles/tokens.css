@@ -1,0 +1,60 @@
+:root {
+  --bg: #f7f7f8;
+  --card: #fff;
+  --text: #1a1a1a;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #4f46e5;
+  --accent-soft: #eef2ff;
+  --char-color: #4f46e5;
+  --tag-color: #6366f1;
+  --badge-alt-bg: #ecfdf5;
+  --badge-alt-fg: #059669;
+  --badge-stars-bg: #fef3c7;
+  --badge-stars-fg: #b45309;
+  --chip-new-bg: rgba(255, 251, 235, 0.92);
+  --chip-new-fg: #b45309;
+  --chip-new-border: rgba(217, 119, 6, 0.35);
+  --chip-new-ripple: rgba(251, 191, 36, 0.45);
+  --chip-mod-bg: rgba(239, 246, 255, 0.92);
+  --chip-mod-fg: #1d4ed8;
+  --chip-mod-border: rgba(37, 99, 235, 0.35);
+  --chip-mod-ripple: rgba(96, 165, 250, 0.45);
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-hover: 0 14px 32px rgba(15, 23, 42, 0.12);
+  --skeleton: #eef0f3;
+  --aura-a: rgba(99, 102, 241, 0.14);
+  --aura-b: rgba(236, 72, 153, 0.1);
+  --nav-bg: rgba(247, 247, 248, 0.82);
+  --nav-h: 60px;
+}
+
+:root.dark {
+  --bg: #0b1220;
+  --card: #111a2e;
+  --text: #e6ecf5;
+  --muted: #8fa0b8;
+  --border: #223052;
+  --accent: #8ab4ff;
+  --accent-soft: #1c2a49;
+  --char-color: #8ab4ff;
+  --tag-color: #818cf8;
+  --badge-alt-bg: #0d2e26;
+  --badge-alt-fg: #6ee7b7;
+  --badge-stars-bg: #3d2a05;
+  --badge-stars-fg: #fcd34d;
+  --chip-new-bg: rgba(69, 46, 8, 0.85);
+  --chip-new-fg: #fcd34d;
+  --chip-new-border: rgba(252, 211, 77, 0.45);
+  --chip-new-ripple: rgba(252, 211, 77, 0.5);
+  --chip-mod-bg: rgba(17, 37, 77, 0.85);
+  --chip-mod-fg: #93c5fd;
+  --chip-mod-border: rgba(147, 197, 253, 0.45);
+  --chip-mod-ripple: rgba(147, 197, 253, 0.5);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 18px 40px rgba(0, 0, 0, 0.6);
+  --skeleton: #1a2540;
+  --aura-a: rgba(138, 180, 255, 0.16);
+  --aura-b: rgba(236, 72, 153, 0.12);
+  --nav-bg: rgba(11, 18, 32, 0.78);
+}

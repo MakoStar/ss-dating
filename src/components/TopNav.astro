@@ -1,0 +1,48 @@
+---
+interface Props {
+  searchPlaceholder: string;
+}
+
+const { searchPlaceholder } = Astro.props;
+---
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#">
+      <span class="nav-dot" aria-hidden="true"></span>
+      <span class="nav-brand-text">Stella</span>
+    </a>
+
+    <div class="nav-search">
+      <span class="nav-search-icon" aria-hidden="true">🔍</span>
+      <input
+        id="search"
+        type="search"
+        placeholder={searchPlaceholder}
+        data-i18n-placeholder="searchPlaceholder"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button
+        id="search-clear"
+        class="nav-search-clear"
+        type="button"
+        aria-label="Clear search"
+        title="Clear"
+        hidden
+      >x</button>
+    </div>
+
+    <div class="nav-actions">
+      <button
+        id="theme-toggle"
+        class="icon-btn"
+        type="button"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      >
+        <span aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>

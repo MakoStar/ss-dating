@@ -1,0 +1,26 @@
+---
+import { AREA_LABELS } from '../lib/constants';
+import type { AreaKey } from '../lib/constants';
+
+interface Props {
+  areas: AreaKey[];
+}
+
+const { areas } = Astro.props;
+---
+
+<div class="tabs" role="tablist">
+  {
+    areas.map((area) => (
+      <button
+        class="tab"
+        type="button"
+        role="tab"
+        data-area={area}
+        aria-selected="false"
+      >
+        {AREA_LABELS[area]}
+      </button>
+    ))
+  }
+</div>

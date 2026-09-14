@@ -1,0 +1,21 @@
+{
+  "name": "ss-dating",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "gen": "node scripts/gen-data.cjs",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "sync": "npx astro sync"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
