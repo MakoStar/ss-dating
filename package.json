@@ -12,7 +12,7 @@
     "sync": "npx astro sync"
   },
   "dependencies": {
-    "@makostar/ss-cursor": "1.0.1",
+    "@makostar/ss-cursor": "1.0.3",
     "astro": "^5.0.0"
   },
   "devDependencies": {
