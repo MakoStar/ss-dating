@@ -88,6 +88,21 @@ const ssr = {
 
   <script>
     import { initApp } from '../lib/client/app';
+    import { initStellaSoraCursor } from '@makostar/ss-cursor';
+
+    type CursorInstance = Awaited<ReturnType<typeof initStellaSoraCursor>>;
+
+    let cursor: CursorInstance | null = null;
+
+    async function initCursor(theme: string) {
+      cursor?.destroy();
+      cursor = await initStellaSoraCursor(
+        theme === 'auto' ? {} : { theme }
+      );
+      console.log('Initialized:', theme);
+    }
+    initCursor('random');
+    
     initApp();
   </script>
 </BaseLayout>
