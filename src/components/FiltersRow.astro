@@ -2,11 +2,13 @@
 interface Props {
   hasGrade: boolean;
   hasJob: boolean;
+  hasEET: boolean;
   hasChangelog: boolean;
   allChars: string;
   allLandmarks: string;
   allGrades: string;
   allJobs: string;
+  allEET: string;
   allChanges: string;
   changeAdded: string;
   changeModified: string;
@@ -16,11 +18,13 @@ interface Props {
 const {
   hasGrade,
   hasJob,
+  hasEET,
   hasChangelog,
   allChars,
   allLandmarks,
   allGrades,
   allJobs,
+  allEET,
   allChanges,
   changeAdded,
   changeModified,
@@ -31,10 +35,6 @@ const {
 <div class="filters-row">
   <select id="char-filter">
     <option value="" data-i18n="allChars">{allChars}</option>
-  </select>
-
-  <select id="landmark-filter">
-    <option value="" data-i18n="allLandmarks">{allLandmarks}</option>
   </select>
 
   {hasGrade && (
@@ -48,6 +48,16 @@ const {
       <option value="" data-i18n="allJobs">{allJobs}</option>
     </select>
   )}
+
+  {hasEET && (
+    <select id="eet-filter">
+      <option value="" data-i18n="allEET">{allEET}</option>
+    </select>
+  )}
+
+  <select id="landmark-filter">
+    <option value="" data-i18n="allLandmarks">{allLandmarks}</option>
+  </select>
 
   {hasChangelog && (
     <select id="change-filter">
