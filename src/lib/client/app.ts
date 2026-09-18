@@ -12,6 +12,7 @@ interface AppState {
   landmarkId: string;
   grade: string;
   job: string;
+  eet: string;
   change: ChangeType;
   q: string;
 }
@@ -20,12 +21,14 @@ interface AppState {
 export function initApp(): void {
   const areaCounts = readAreaCounts();
 
+  const navBrandSelect = $<HTMLSpanElement>('.nav-brand-text');
   const cards = Array.from(document.querySelectorAll<HTMLElement>('.card'));
   const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>('.tab'));
   const charSelect = $<HTMLSelectElement>('#char-filter');
   const landmarkSelect = $<HTMLSelectElement>('#landmark-filter');
   const gradeSelect = document.querySelector<HTMLSelectElement>('#grade-filter');
   const jobSelect = document.querySelector<HTMLSelectElement>('#job-filter');
+  const eetSelect = document.querySelector<HTMLSelectElement>('#eet-filter');
   const changeSelect = document.querySelector<HTMLSelectElement>('#change-filter');
   const searchInput = $<HTMLInputElement>('#search');
   const searchClear = document.querySelector<HTMLButtonElement>('#search-clear');
@@ -40,6 +43,7 @@ export function initApp(): void {
     landmarkId: '',
     grade: '',
     job: '',
+    eet: '',
     change: '',
     q: '',
   };
@@ -56,7 +60,8 @@ export function initApp(): void {
     const charMap = new Map<string, SelectEntry>();
     const landmarkMap = new Map<string, SelectEntry>();
     const gradeSet = new Set<string>();
-    const jobSet = new Set<string>();
+    const jobMap = new Map<string, string>();
+    const eetMap = new Map<string, string>();
 
     /** 遍历所有卡片，统计筛选选项 */
     for (const c of cards) {
@@ -68,18 +73,26 @@ export function initApp(): void {
       const landmarkName = c.dataset.landmarkName ?? '';
       const grade = c.dataset.charGrade ?? '';
       const job = c.dataset.charJob ?? '';
-
-      const ce = charMap.get(charId) ?? { label: charName || charId, count: 0 };
+      /** 
+        * 注意: 这里 dataset 有坑 (charJobNum)
+        * 如果是这种带多个大写字母的小驼峰
+        * 在第二个之后会全部拍平成小写,转成了 charJobnum  
+        */
+      const jobNum = c.dataset.charJobnum ?? '';
+      /** 这里 charEET 转成了 charEet  */
+      const eet = c.dataset.charEet ?? '';
+      const eetNum = c.dataset.charEetnum ?? '';
+      const ce = charMap.get(charId) ?? { label: `${charId} ${charName}` || charId, count: 0 };
       ce.count++;
       charMap.set(charId, ce);
 
-      const le =
-        landmarkMap.get(landmarkId) ?? { label: landmarkName || landmarkId, count: 0 };
+      const le = landmarkMap.get(landmarkId) ?? { label: landmarkName || landmarkId, count: 0 };
       le.count++;
       landmarkMap.set(landmarkId, le);
 
       if (grade) gradeSet.add(grade);
-      if (job) jobSet.add(job);
+      if (job) jobMap.set(jobNum, job);
+      if (eet && eetNum) eetMap.set(eetNum, eet);
     }
 
     /** 更新角色筛选选项 */
@@ -108,6 +121,7 @@ export function initApp(): void {
         const opt = document.createElement('option');
         opt.value = g;
         opt.textContent = '★'.repeat(Math.max(1, Math.min(6, Number(g))));
+        // opt.textContent = g;
         gradeSelect.appendChild(opt);
       }
 
@@ -116,9 +130,13 @@ export function initApp(): void {
 
     /** 更新职业筛选选项 */
     if (jobSelect) {
-      const jobs = [...jobSet].sort((a, b) =>
-        a.localeCompare(b, undefined, { numeric: true }),
-      );
+      // const jobs = [...jobMap].sort((a, b) =>
+      //   a.localeCompare(b, undefined, { numeric: true }),
+      // );
+      const jobs = [...jobMap]
+        .sort(([n1], [n2]) => Number(n1) - Number(n2))
+        .map(([, t]) => t);
+        
       const current = jobSelect.value;
       jobSelect.innerHTML = '';
 
@@ -135,6 +153,31 @@ export function initApp(): void {
       }
 
       jobSelect.value = current && jobs.includes(current) ? current : '';
+    }
+
+    /** 更新元素类型筛选选项 */
+    if (eetSelect) {
+      /** 这里使用 EET 元素类型的数字顺序排序 */
+      const eets = [...eetMap]
+        .sort(([n1], [n2]) => Number(n1) - Number(n2))
+        .map(([, t]) => t);
+      
+      const current = eetSelect.value;
+      eetSelect.innerHTML = '';
+
+      const first = document.createElement('option');
+      first.value = '';
+      first.textContent = t(lang, 'allEET');
+      eetSelect.appendChild(first);
+
+      for (const j of eets) {
+        const opt = document.createElement('option');
+        opt.value = j;
+        opt.textContent = j;
+        eetSelect.appendChild(opt);
+      }
+
+      eetSelect.value = current && eets.includes(current) ? current : '';
     }
 
     /** 更新变更类型筛选选项 */
@@ -160,6 +203,7 @@ export function initApp(): void {
         (!state.landmarkId || c.dataset.landmarkId === state.landmarkId) &&
         (!state.grade || c.dataset.charGrade === state.grade) &&
         (!state.job || c.dataset.charJob === state.job) &&
+        (!state.eet || c.dataset.charEet === state.eet) &&
         (!state.change || c.dataset.change === state.change) &&
         matchesQuery(c, tokens);
       c.hidden = !ok;
@@ -181,6 +225,7 @@ export function initApp(): void {
     state.landmarkId = '';
     state.grade = '';
     state.job = '';
+    state.eet = '';
     state.change = '';
     state.q = '';
     searchInput.value = '';
@@ -189,6 +234,7 @@ export function initApp(): void {
     landmarkSelect.value = '';
     if (gradeSelect) gradeSelect.value = '';
     if (jobSelect) jobSelect.value = '';
+    if (eetSelect) eetSelect.value = '';
     if (changeSelect) changeSelect.value = '';
   }
 
@@ -219,6 +265,27 @@ export function initApp(): void {
     replayCards();
   }
 
+  /** Nova 文页面触发事件 */
+  navBrandSelect.addEventListener('dblclick', () => {
+    const bodyElement = $<HTMLBodyElement>('body');
+    const titleElement = $<HTMLTitleElement>('title');
+    if (!navBrandSelect.dataset.nova) {
+      tabs.forEach(el => el.dataset.area !== "EN" && (el.style.display = 'none'));
+      switchArea('EN');
+      bodyElement.classList.add('font-Nova');
+      navBrandSelect.dataset.nova = titleElement.textContent;
+      titleElement.textContent = 'Nova Font Dating Events';
+      navBrandSelect.textContent = 'StellaSora Nova Font Page';
+    } else {
+      titleElement.textContent = navBrandSelect.dataset.nova;
+      delete navBrandSelect.dataset.nova;
+      tabs.forEach(el => el.style.display = '');
+      switchArea('CN');
+      bodyElement.classList.remove('font-Nova');
+      navBrandSelect.textContent = 'Stella';
+    }
+  });
+
   /** 事件绑定 */
   for (const tab of tabs) {
     tab.addEventListener('click', () => switchArea(tab.dataset.area ?? 'CN'));
@@ -248,6 +315,14 @@ export function initApp(): void {
   if (jobSelect) {
     jobSelect.addEventListener('change', () => {
       state.job = jobSelect.value;
+      applyFilters();
+    });
+  }
+
+  /** 筛选条件变化事件绑定 */
+  if (eetSelect) {
+    eetSelect.addEventListener('change', () => {
+      state.eet = eetSelect.value;
       applyFilters();
     });
   }
