@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Nova';
+    src: url('https://webcnstatic.yostar.net/stellasora/stellasora-cn-official-frontend/main/h5/assets/NovaModern-63b4dbbf.otf')
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +14,10 @@
 html,
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.font-Nova {
+    font-family: "Nova" !important;
 }
 
 body {
