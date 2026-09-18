@@ -9,6 +9,8 @@ const CHANGELOG_PATH = path.join(DATA_DIR, 'changelog.json');
 const AREAS = { CN: 'zh_CN', EN: 'en_US', JP: 'ja_JP', KR: 'ko_KR', TW: 'zh_TW'};
 const TAG_COLOR = { 101: '#db6893', 102: '#7d81e3', 103: '#41cbaf' };
 const GRADE = { 1: 5, 2: 4, 3: 3 };
+/** 角色元素类型颜色 @see Lua/GameCore/Common/AllEnum.lua -- AllEnum.SkillElementColor */
+const EET_COLOR = { 1: '#4e9fd8', 2: '#ef522e', 3: '#a1673d', 4: '#87bf10', 5: '#f3b521', 6: '#b15f9f'}
 
 /** changelog 保留天数 */
 const KEEP_DAYS = 14;
@@ -36,6 +38,7 @@ function loadArea(area, lang) {
       DatingCharacterEvent: readJson(path.join(langDir, 'DatingCharacterEvent.json')),
       CharacterDes: readJson(path.join(langDir, 'CharacterDes.json')),
       CharacterTag: readJson(path.join(langDir, 'CharacterTag.json')),
+      UIText: readJson(path.join(langDir, 'UIText.json')),
     },
     enCharacter: readJson(
       path.join(SS_DATA, 'EN', 'language', 'en_US', 'Character.json'),
@@ -56,8 +59,12 @@ function computeArea(area, lang) {
     const charGrade = GRADE[char.Grade] || 4;
     const charDes = bin.CharacterDes[char.Id] || '';
     const charTags = charDes?.Tag || [];
+    const charTagNum = charTags[0] || 101;
     const charTagColor = TAG_COLOR[charTags[0]] || '';
-    const charJob = L.CharacterTag[bin.CharacterTag[charTags[0]]?.Title] || '';
+    const charJob = L.CharacterTag[bin.CharacterTag[charTagNum]?.Title] || '';
+    /** 角色元素类型 */
+    const charEET = L.UIText[`UIText.ELEMENT_${char.EET}.1`] || '';
+    const charEETColor = EET_COLOR[char.EET] || '#fff';
     /** 这里需要拿英文角色名去 StellaSoraApi 请求角色头像 */
     const enCharName = EN_LAN_CHARACTER[char.Name] || '';
 
@@ -80,6 +87,10 @@ function computeArea(area, lang) {
         enCharName,
         charColor: charDes?.CharColor,
         charJob,
+        charJobNum: charTagNum,
+        charEETNum: char.EET,
+        charEET: charEET,
+        charEETColor,
         charTagColor,
         eventCg: ev.CG,
         landmarkName: L.DatingLandmark[landmark?.Name] || '',
