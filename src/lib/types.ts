@@ -8,6 +8,10 @@ export interface Row {
   charGrade?: number;
   charColor?: string;
   charJob?: string;
+  charJobNum?: number;
+  charEETNum?: number;
+  charEET?: string;
+  charEETColor?: string;
   charTagColor?: string;
   landmarkId: number;
   landmarkName?: string;
