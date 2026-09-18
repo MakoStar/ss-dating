@@ -20,7 +20,7 @@ import type { AreaKey } from '../lib/constants';
 import { t } from '../lib/i18n';
 import { buildRows } from '../lib/server/buildRows';
 
-const { rows, areaCounts, hasGrade, hasJob, hasChangelog } = buildRows();
+const { rows, areaCounts, hasGrade, hasJob, hasEET, hasChangelog } = buildRows();
 
 const areas = [...new Set(rows.map((r) => r.area))] as AreaKey[];
 const initialArea = areas[0] ?? 'CN';
@@ -33,6 +33,7 @@ const ssr = {
   allLandmarks: t('CN', 'allLandmarks'),
   allGrades: t('CN', 'allGrades'),
   allJobs: t('CN', 'allJobs'),
+  allEET: t('CN', 'allEET'),
   allChanges: t('CN', 'allChanges'),
   changeAdded: t('CN', 'changeAdded'),
   changeModified: t('CN', 'changeModified'),
@@ -57,11 +58,13 @@ const ssr = {
     <FiltersRow
       hasGrade={hasGrade}
       hasJob={hasJob}
+      hasEET={hasEET}
       hasChangelog={hasChangelog}
       allChars={ssr.allChars}
       allLandmarks={ssr.allLandmarks}
       allGrades={ssr.allGrades}
       allJobs={ssr.allJobs}
+      allEET={ssr.allEET}
       allChanges={ssr.allChanges}
       changeAdded={ssr.changeAdded}
       changeModified={ssr.changeModified}
