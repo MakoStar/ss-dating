@@ -8,6 +8,7 @@ export interface BuildRowsResult {
   areaCounts: Record<string, number>;
   hasGrade: boolean;
   hasJob: boolean;
+  hasEET: boolean;
   hasChangelog: boolean;
 }
 
@@ -34,6 +35,7 @@ export function buildRows(): BuildRowsResult {
           searchIndex: [
             e.charName,
             e.charJob,
+            e.charEET,
             e.landmarkName,
             e.eventName,
             e.eventClue,
@@ -58,6 +60,7 @@ export function buildRows(): BuildRowsResult {
     areaCounts,
     hasGrade: rows.some((r) => r.charGrade != null && !Number.isNaN(r.charGrade)),
     hasJob: rows.some((r) => !!r.charJob),
+    hasEET: rows.some((r) => !!r.charEET),
     hasChangelog,
   };
 }
