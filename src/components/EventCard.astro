@@ -33,6 +33,9 @@ const avatar = avatarName(r);
   data-char-name={r.charName ?? ''}
   data-char-grade={r.charGrade != null ? String(r.charGrade) : ''}
   data-char-job={r.charJob ?? ''}
+  data-char-jobnum={r.charJobNum ?? ''}
+  data-char-eet={r.charEET ?? ''}
+  data-char-eetnum={r.charEETNum ?? ''}
   data-landmark-id={String(r.landmarkId)}
   data-landmark-name={r.landmarkName ?? ''}
   data-change={r.changeType}
@@ -89,6 +92,17 @@ const avatar = avatarName(r);
             style={r.charColor ? `--char-color:${r.charColor}` : undefined}
           >
             {r.charName}
+          </span>
+        )
+      }
+
+      {
+        r.charEET && (
+          <span
+            class="badge badge-eet"
+            style={r.charEETColor ? `--eet-color:${r.charEETColor}` : undefined}
+          >
+            {r.charEET}
           </span>
         )
       }
