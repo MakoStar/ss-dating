@@ -265,13 +265,28 @@ export function initApp(): void {
     replayCards();
   }
 
+  /** 读取上次选中的标签页 */
+  function getSavedArea() {
+    try {
+      const savedArea = localStorage.getItem(STORAGE.area);
+      return savedArea && tabs.some((tab) => tab.dataset.area === savedArea)
+        ? savedArea
+        : state.area
+    } catch {
+      return state.area;
+    }
+  }
+
   /** Nova 文页面触发事件 */
   navBrandSelect.addEventListener('dblclick', () => {
     const bodyElement = $<HTMLBodyElement>('body');
     const titleElement = $<HTMLTitleElement>('title');
+    
     if (!navBrandSelect.dataset.nova) {
       tabs.forEach(el => el.dataset.area !== "EN" && (el.style.display = 'none'));
+      const savedArea = getSavedArea();
       switchArea('EN');
+      localStorage.setItem(STORAGE.area, savedArea);
       bodyElement.classList.add('font-Nova');
       navBrandSelect.dataset.nova = titleElement.textContent;
       titleElement.textContent = 'Nova Font Dating Events';
@@ -280,9 +295,17 @@ export function initApp(): void {
       titleElement.textContent = navBrandSelect.dataset.nova;
       delete navBrandSelect.dataset.nova;
       tabs.forEach(el => el.style.display = '');
-      switchArea('CN');
+      switchArea(getSavedArea());
       bodyElement.classList.remove('font-Nova');
       navBrandSelect.textContent = 'Stella';
+    }
+    try {
+      localStorage.setItem(
+        STORAGE.novaPageState,
+        Boolean(navBrandSelect.dataset.nova).toString(),
+      );
+    } catch {
+      /* ignore */
     }
   });
 
@@ -390,20 +413,36 @@ export function initApp(): void {
   applyTheme(currentTheme(), themeBtn);
 
   /** 读取上次选中的标签页 */
-  const savedArea = (() => {
+  // const savedArea = (() => {
+  //   try {
+  //     return localStorage.getItem(STORAGE.area);
+  //   } catch {
+  //     return null;
+  //   }
+  // })();
+
+  /** 判断上次保存时是否是 nova 文的页面 */
+  const isNovaFontPage = (() => {
     try {
-      return localStorage.getItem(STORAGE.area);
+      return localStorage.getItem(STORAGE.novaPageState) === 'true' 
+        ? true 
+        : false;
     } catch {
-      return null;
+      return false;
     }
   })();
 
+  if (isNovaFontPage) {
+    navBrandSelect.dispatchEvent(new MouseEvent('dblclick', { bubbles: true }))
+    return;
+  }  
+
   /** 确定初始标签页 */
-  const initialArea = savedArea && tabs.some((tab) => tab.dataset.area === savedArea)
-    ? savedArea
-    : state.area;
+  const initialArea = getSavedArea();
 
   /** 切换到初始标签页 */
   switchArea(initialArea);
+
+
   syncSearchClear();
 }

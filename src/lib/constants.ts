@@ -22,4 +22,5 @@ export const AREA_TO_LANG: Record<string, string> = {
 export const STORAGE = {
   theme: 'de-theme',
   area: 'de-area',
+  novaPageState: 'is-nova-page',
 } as const;
