@@ -43,5 +43,6 @@ export function matchesQuery(c: HTMLElement, tokens: string[]): boolean {
 
 /** 按 ID 降序排序 */
 export function byIdDesc(a: [string, SelectEntry], b: [string, SelectEntry]): number {
-  return Number(b[0]) - Number(a[0]);
+  // return Number(b[0]) - Number(a[0]);
+  return Number(a[0]) - Number(b[0]);
 }
