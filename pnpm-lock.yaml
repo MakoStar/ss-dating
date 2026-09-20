@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@makostar/ss-cursor':
-        specifier: 1.0.3
-        version: 1.0.3
+        specifier: ^1.1.1
+        version: 1.1.1
       astro:
         specifier: ^5.0.0
         version: 5.18.2(@types/node@22.20.2)(rollup@4.63.2)(typescript@5.9.3)(yaml@2.9.1)
@@ -562,8 +562,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.6.0':
     resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
 
-  '@makostar/ss-cursor@1.0.3':
-    resolution: {integrity: sha512-uTb8CAhRKsFi8A7gftTGvzIeUU9AiIBy/n92xvLgs04YePSTtqwUs57swQLtputC5W5YQerWnrQVFFmInYQjZw==}
+  '@makostar/ss-cursor@1.1.1':
+    resolution: {integrity: sha512-YPcirfI6cdt/TJpjXXwGS7OYxTLTmQFx0DNGVVjc1+mH5LEHUW037PzodOMwfoP3/o6w6O+h1NPSqtwriICwxg==}
 
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
     resolution: {integrity: sha512-oTXEIha4SsuXdTA4Iyskj0kpdx2yVXdhd75c2v3xGrHFfVMsbhTPZU/nMPL4sWKo4pBHm3aucLaqGlF696dTyQ==}
@@ -2348,7 +2348,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.6.0': {}
 
-  '@makostar/ss-cursor@1.0.3': {}
+  '@makostar/ss-cursor@1.1.1': {}
 
   '@napi-rs/lzma-linux-x64-gnu@1.5.1':
     optional: true
