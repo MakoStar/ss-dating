@@ -31,10 +31,16 @@ jobs:
         env:
           PAYLOAD: ${{ toJSON(github.event.client_payload) }}
         run: |
-          echo "$PAYLOAD" | jq '.type'
-          echo "$PAYLOAD" | jq '.version'
-          echo "$PAYLOAD" | jq -r '.version.CN'
+          echo "type = $(echo "$PAYLOAD" | jq -r '.type')"
+      
+          echo "=== updated regions ==="
           echo "$PAYLOAD" | jq -r '.updated[]'
+      
+          echo "=== unupdated regions ==="
+          echo "$PAYLOAD" | jq -r '.unupdated[]'
+      
+          echo "=== version per region ==="
+          echo "$PAYLOAD" | jq -r '.version | to_entries[] | "\(.key)=\(.value)"'
 
       - name: Clone data repo
         run: |
