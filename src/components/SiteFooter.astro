@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { thanks, about, repo, copy } = Astro.props;
+const buildTimeIso = __BUILD_DATE__;
 ---
 
 <footer class="site-footer">
@@ -18,17 +19,12 @@ const { thanks, about, repo, copy } = Astro.props;
 
     <p class="footer-text" data-i18n="footerThanks">{thanks}</p>
     <p class="footer-text" data-i18n="footerAbout">{about}</p>
+    <p class="footer-text">
+      <span data-i18n="builtAt"></span>
+      <time datetime={buildTimeIso} data-build-time>{buildTimeIso}</time>
+    </p>
 
     <div class="footer-links">
-      <a
-        href="https://github.com/torikushiii/StellaSoraAPI"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="footer-link"
-      >
-        <span aria-hidden="true">⚡</span>
-        <span>StellaSoraAPI</span>
-      </a>
       <a
         href="https://github.com/MakoStar/ss-dating"
         target="_blank"
@@ -37,6 +33,15 @@ const { thanks, about, repo, copy } = Astro.props;
       >
         <span aria-hidden="true">📦</span>
         <span data-i18n="footerRepo">{repo}</span>
+      </a>
+      <a
+        href="https://stelladb.pages.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-link"
+      >
+        <span aria-hidden="true">⚡</span>
+        <span>stelladb</span>
       </a>
     </div>
 
