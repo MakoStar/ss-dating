@@ -250,8 +250,28 @@
   overflow: hidden;
 }
 
+.card .clue {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .card .option {
-  color: var(--text);
+  padding: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-wrap: pretty;
+  word-break: break-word;
+  color: var(--event-option-text);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card:hover .option {
+  background: rgba(56, 189, 248, 0.1);
+  border-left: 4px solid #0abec5;
 }
 
 .card footer {

@@ -27,6 +27,7 @@
   --aura-b: rgba(236, 72, 153, 0.1);
   --nav-bg: rgba(247, 247, 248, 0.82);
   --nav-h: 60px;
+  --event-option-text: #1e293b;
 }
 
 :root.dark {
@@ -57,4 +58,5 @@
   --aura-a: rgba(138, 180, 255, 0.16);
   --aura-b: rgba(236, 72, 153, 0.12);
   --nav-bg: rgba(11, 18, 32, 0.78);
+  --event-option-text: #fff;
 }
