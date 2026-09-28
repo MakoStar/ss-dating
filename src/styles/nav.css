@@ -30,6 +30,7 @@
   letter-spacing: -0.01em;
   transition: opacity 0.2s ease;
   flex: 0 0 auto;
+  user-select: none;
 }
 
 .nav-brand:hover {
