@@ -1,6 +1,5 @@
 ---
-import { ASSET_BASE } from '../lib/constants';
-import { avatarName, starText } from '../lib/helpers';
+import { asset, avatarName, starText, onImgError } from '../lib/helpers';
 import type { Row } from '../lib/types';
 
 interface Props {
@@ -22,6 +21,8 @@ const cardVars = [
 
 const stars = starText(r.charGrade);
 const avatar = avatarName(r);
+const datingEventCgImg = asset(`datingeventcg/${r.eventCg}.webp`);
+const charAvatarImg = asset(`head/${avatar}.webp`);
 ---
 
 <article
@@ -46,7 +47,8 @@ const avatar = avatarName(r);
       <div class="card-media">
         <img
           class="card-cg"
-          src={`${ASSET_BASE}/${r.eventCg}.png`}
+          src={datingEventCgImg}
+          onerror={onImgError()}
           alt={r.eventName ?? 'Event CG'}
           loading="lazy"
           decoding="async"
@@ -75,12 +77,13 @@ const avatar = avatarName(r);
         avatar && (
           <img
             class="char-avatar"
-            src={`${ASSET_BASE}/${avatar}.png`}
+            src={charAvatarImg}
             alt={r.charName ?? ''}
             loading="lazy"
             decoding="async"
             width="24"
             height="24"
+            onerror={onImgError()}
           />
         )
       }
