@@ -10,6 +10,7 @@ interface Props {
   height?: number | undefined;
   class?: string | undefined;
   loading?: 'lazy' | 'eager' | undefined;
+  priority?: boolean | undefined;
   format?: 'webp' | 'avif' | 'png' | 'jpeg' | undefined;
   quality?: number | undefined;
   fallbackAlt?: string | undefined;
@@ -22,6 +23,7 @@ const {
   height,
   class: klass,
   loading = 'lazy',
+  priority,
   format = 'webp',
   quality = 80,
   fallbackAlt = 'No Image',
@@ -33,7 +35,8 @@ const {
     <Image
       src={src}
       alt={alt}
-      loading={loading}
+      {...priority !== undefined && { priority }}
+      {...!priority && { loading }}
       decoding="async"
       format={format}
       quality={quality}
@@ -43,13 +46,12 @@ const {
     />
   ) : (
     <img
-      class={klass}
       src={NO_IMAGE_SVG}
       alt={fallbackAlt}
-      width={width}
-      height={height}
-      loading={loading}
-      decoding="async"
+      {...!priority && { loading }}
+      {...width !== undefined && { width }}
+      {...height !== undefined && { height }}
+      {...klass !== undefined && { class: klass }}
     />
   )
 }

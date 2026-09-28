@@ -1,8 +1,8 @@
 ---
-import AssetImage from "./AssetImage.astro";
-import type { Row } from "../lib/types";
-import { getCgByRow, getHeadByRow } from "../lib/assets";
-import { starText } from "../lib/helpers";
+import AssetImage from './AssetImage.astro';
+import type { Row } from '../lib/types';
+import { getCgByRow, getHeadByRow } from '../lib/assets';
+import { starText } from '../lib/helpers';
 
 interface Props {
   row: Row;
@@ -19,11 +19,13 @@ const cardVars = [
   r.charTagColor ? `--tag-color:${r.charTagColor}` : null,
 ]
   .filter(Boolean)
-  .join(";");
+  .join(';');
 
 const stars = starText(r.charGrade);
 const cgImg = getCgByRow(r);
 const headImg = getHeadByRow(r);
+const isAboveFold = index <= 10;
+const title = r.eventName?.trim() || '(unknown)';
 ---
 
 <article
@@ -32,14 +34,14 @@ const headImg = getHeadByRow(r);
   data-area={r.area}
   data-char-id={String(r.charId)}
   data-event-id={String(r.eventId)}
-  data-char-name={r.charName ?? ""}
-  data-char-grade={r.charGrade != null ? String(r.charGrade) : ""}
-  data-char-job={r.charJob ?? ""}
-  data-char-jobnum={r.charJobNum ?? ""}
-  data-char-eet={r.charEET ?? ""}
-  data-char-eetnum={r.charEETNum ?? ""}
+  data-char-name={r.charName ?? ''}
+  data-char-grade={r.charGrade != null ? String(r.charGrade) : ''}
+  data-char-job={r.charJob ?? ''}
+  data-char-jobnum={r.charJobNum ?? ''}
+  data-char-eet={r.charEET ?? ''}
+  data-char-eetnum={r.charEETNum ?? ''}
   data-landmark-id={String(r.landmarkId)}
-  data-landmark-name={r.landmarkName ?? ""}
+  data-landmark-name={r.landmarkName ?? ''}
   data-change={r.changeType}
   data-search={r.searchIndex}
 >
@@ -49,16 +51,17 @@ const headImg = getHeadByRow(r);
         <AssetImage
           class="card-cg"
           src={cgImg}
-          alt={r.eventName ?? "Event CG"}
+          alt={r.eventName ?? 'Event CG'}
           width={400}
           height={225}
+          priority={isAboveFold}
         />
-        {r.changeType === "added" && (
+        {r.changeType === 'added' && (
           <span class="chip chip-new" data-i18n="changeAdded">
             {changeAdded}
           </span>
         )}
-        {r.changeType === "modified" && (
+        {r.changeType === 'modified' && (
           <span class="chip chip-mod" data-i18n="changeModified">
             {changeModified}
           </span>
@@ -68,15 +71,16 @@ const headImg = getHeadByRow(r);
   }
 
   <div class="card-body">
-    <h3>{r.eventName || "(unknown)"}</h3>
+    <h3 aria-label={title}>{title}</h3>
 
     <div class="meta">
       <AssetImage
         class="char-avatar"
         src={headImg}
-        alt={r.charName ?? ""}
+        alt={r.charName ?? ''}
         width={24}
         height={24}
+        priority={isAboveFold}
         fallbackAlt=""
       />
 
