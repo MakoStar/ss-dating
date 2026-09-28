@@ -9,7 +9,7 @@ export const AREA_LABELS = {
 export type AreaKey = keyof typeof AREA_LABELS;
 
 /** 头像资源 api 地址: 感谢 torikushiii StellaSoraAPI */
-export const ASSET_BASE = 'https://api.ennead.cc/stella/assets';
+// export const ASSET_BASE = 'https://api.ennead.cc/stella/assets';
 
 export const AREA_TO_LANG: Record<string, string> = {
   CN: 'zh-CN',
