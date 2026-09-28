@@ -32,14 +32,13 @@ jobs:
             export/assets/assetbundles/icon/datingeventcg \
             export/assets/assetbundles/icon/head
           git checkout "$ASSETS_BRANCH"
-        shell: bash
 
-      - name: Copy assets into public/
+      - name: Copy assets into src/assets
         run: |
-          mkdir -p public/assets
-          cp -r /tmp/assets/export/assets/assetbundles/icon/datingeventcg public/assets/datingeventcg
-          cp -r /tmp/assets/export/assets/assetbundles/icon/head        public/assets/head
-          find public/assets -maxdepth 2 -type d
+          mkdir -p src/assets
+          cp -r /tmp/assets/export/assets/assetbundles/icon/datingeventcg src/assets/datingeventcg
+          cp -r /tmp/assets/export/assets/assetbundles/icon/head        src/assets/head
+          find src/assets -maxdepth 2 -type d
         shell: bash
 
       - uses: pnpm/action-setup@v6
@@ -49,7 +48,6 @@ jobs:
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
-
       - run: pnpm run build
 
       - uses: actions/upload-pages-artifact@v3
@@ -65,3 +63,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        
