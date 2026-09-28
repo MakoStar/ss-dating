@@ -20,8 +20,29 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: pnpm/action-setup@v6
+      - name: Clone assets (sparse-checkout)
+        env:
+          ASSETS_REPO: https://github.com/MakoStar/ss-assets.git
+          ASSETS_BRANCH: main
+        run: |
+          git clone --no-checkout --depth 1 --branch "$ASSETS_BRANCH" "$ASSETS_REPO" /tmp/assets
+          cd /tmp/assets
+          git sparse-checkout init --cone
+          git sparse-checkout set \
+            export/assets/assetbundles/icon/datingeventcg \
+            export/assets/assetbundles/icon/head
+          git checkout "$ASSETS_BRANCH"
+        shell: bash
 
+      - name: Copy assets into public/
+        run: |
+          mkdir -p public/assets
+          cp -r /tmp/assets/export/assets/assetbundles/icon/datingeventcg public/assets/datingeventcg
+          cp -r /tmp/assets/export/assets/assetbundles/icon/head        public/assets/head
+          find public/assets -maxdepth 2 -type d
+        shell: bash
+
+      - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
           node-version: 20
