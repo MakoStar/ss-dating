@@ -15,12 +15,11 @@ export const CN_DICT: UIDict = {
   searchPlaceholder: '搜索事件名 / 线索 / 职业 / 角色ID(精确)…',
   reset: '重置',
   empty: '没有匹配的事件',
-  footerThanks:
-    '图像资源与数据接口由 StellaSoraAPI 提供，本项目仅作展示整理，感谢原作者的无私分享。',
-  footerAbout:
-    '本仓库是一个角色邀约事件的可视化查询工具，支持多语言数据、星级与职业筛选，所有内容均由公开 API 自动同步生成。',
+  footerThanks: '',
+  footerAbout: '本仓库是一个角色邀约事件的可视化查询工具，支持多语言数据、星级与职业筛选，自动同步更新。',
   footerRepo: '本仓库源码',
   footerCopy: '仅供学习交流，版权归原游戏与数据提供方所有。',
+  builtAt: '构建于：',
 };
 
 export const EN_DICT: UIDict = {
@@ -37,13 +36,11 @@ export const EN_DICT: UIDict = {
   searchPlaceholder: 'Search event / clue / role / char ID (exact)…',
   reset: 'Reset',
   empty: 'No matching events',
-  footerThanks:
-    'Image assets and data API are provided by StellaSoraAPI. This project is for display and organization only — many thanks to the original author.',
-  footerAbout:
-    'A visual query tool for character dating events. Supports multi-language data, rarity and role filters. All content is auto-generated from public APIs.',
+  footerThanks: '',
+  footerAbout: 'A visual query tool for character dating events. Supports multi-language data, rarity and role filters. Automatically synced and updated.',
   footerRepo: 'Source code',
-  footerCopy:
-    'For learning and sharing only. All rights belong to the original game and data providers.',
+  footerCopy: 'For learning and sharing only. All rights belong to the original game and data providers.',
+  builtAt: 'Built on ',
 };
 
 export const JP_DICT: UIDict = {
@@ -57,16 +54,14 @@ export const JP_DICT: UIDict = {
   allChanges: 'すべての変更',
   changeAdded: '新規',
   changeModified: '更新',
-  searchPlaceholder: 'イベント / ヒント / 職種 / キャラID…',
+  searchPlaceholder: 'イベント / ヒント / 職種 / キャラID(完全一致)…',
   reset: 'リセット',
   empty: '該当するイベントがありません',
-  footerThanks:
-    '画像リソースとデータ API は StellaSoraAPI より提供されています。本プロジェクトは表示・整理のみを目的としており、原作者に深く感謝いたします。',
-  footerAbout:
-    'キャラクターデートイベントのビジュアル検索ツールです。多言語データ、レアリティ・職種フィルターに対応。すべての内容は公開 API から自動生成されます。',
+  footerThanks: '',
+  footerAbout: 'キャラクターデートイベントのビジュアル検索ツールです。多言語データ、レアリティ・職種フィルターに対応。自動で同期・更新されます。',
   footerRepo: 'ソースコード',
-  footerCopy:
-    '学習・共有目的のみ。著作権は原作ゲームおよびデータ提供元に帰属します。',
+  footerCopy: '学習・共有目的のみ。著作権は原作ゲームおよびデータ提供元に帰属します。',
+  builtAt: 'ビルド日時：',
 };
 
 export const KR_DICT: UIDict = {
@@ -80,16 +75,14 @@ export const KR_DICT: UIDict = {
   allChanges: '전체 변경',
   changeAdded: '추가',
   changeModified: '수정',
-  searchPlaceholder: '이벤트 / 힌트 / 직업 / 캐릭터 ID…',
+  searchPlaceholder: '이벤트 / 힌트 / 직업 / 캐릭터 ID(정확히 일치)…',
   reset: '초기화',
   empty: '일치하는 이벤트가 없습니다',
-  footerThanks:
-    '이미지 리소스와 데이터 API는 StellaSoraAPI에서 제공합니다. 본 프로젝트는 표시 및 정리 목적이며, 원작자분께 깊이 감사드립니다.',
-  footerAbout:
-    '캐릭터 데이트 이벤트 시각화 조회 도구입니다. 다국어 데이터, 등급 및 직업 필터를 지원하며 모든 콘텐츠는 공개 API에서 자동 생성됩니다.',
+  footerThanks: '',
+  footerAbout: '캐릭터 데이트 이벤트 시각화 조회 도구입니다. 다국어 데이터, 등급 및 직업 필터를 지원하며 자동으로 동기화·업데이트됩니다.',
   footerRepo: '소스 코드',
-  footerCopy:
-    '학습 및 공유 목적만. 저작권은 원 게임과 데이터 제공자에게 있습니다.',
+  footerCopy: '학습 및 공유 목적만. 저작권은 원 게임과 데이터 제공자에게 있습니다.',
+  builtAt: '빌드: ',
 };
 
 export const TW_DICT: UIDict = {
@@ -103,15 +96,14 @@ export const TW_DICT: UIDict = {
   allChanges: '全部變更',
   changeAdded: '新增',
   changeModified: '修改',
-  searchPlaceholder: '搜尋事件名 / 線索 / 職業 / 角色ID…',
+  searchPlaceholder: '搜尋事件名 / 線索 / 職業 / 角色ID(精確)…',
   reset: '重設',
   empty: '沒有符合的事件',
-  footerThanks:
-    '圖像資源與資料介面由 StellaSoraAPI 提供，本專案僅作展示整理，感謝原作者的無私分享。',
-  footerAbout:
-    '本倉庫是一個角色邀約事件的可視化查詢工具，支援多語言資料、星級與職業篩選，所有內容皆由公開 API 自動同步生成。',
+  footerThanks: '',
+  footerAbout: '本倉庫是一個角色邀約事件的可視化查詢工具，支援多語言資料、星級與職業篩選，自動同步更新。',
   footerRepo: '本倉庫原始碼',
   footerCopy: '僅供學習交流，版權歸原遊戲與資料提供方所有。',
+  builtAt: '建置於：',
 };
 
 export const UI: Record<string, UIDict> = {
