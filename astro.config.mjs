@@ -8,5 +8,8 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ['@makostar/ss-cursor'],
     },
+    define: {
+      __BUILD_DATE__: JSON.stringify(new Date().toISOString()),
+    },
   },
 });
