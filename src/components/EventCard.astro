@@ -1,6 +1,8 @@
 ---
-import { asset, avatarName, starText, onImgError } from '../lib/helpers';
-import type { Row } from '../lib/types';
+import AssetImage from "./AssetImage.astro";
+import type { Row } from "../lib/types";
+import { getCgByRow, getHeadByRow } from "../lib/assets";
+import { starText } from "../lib/helpers";
 
 interface Props {
   row: Row;
@@ -17,12 +19,11 @@ const cardVars = [
   r.charTagColor ? `--tag-color:${r.charTagColor}` : null,
 ]
   .filter(Boolean)
-  .join(';');
+  .join(";");
 
 const stars = starText(r.charGrade);
-const avatar = avatarName(r);
-const datingEventCgImg = asset(`datingeventcg/${r.eventCg}.webp`);
-const charAvatarImg = asset(`head/${avatar}.webp`);
+const cgImg = getCgByRow(r);
+const headImg = getHeadByRow(r);
 ---
 
 <article
@@ -31,36 +32,33 @@ const charAvatarImg = asset(`head/${avatar}.webp`);
   data-area={r.area}
   data-char-id={String(r.charId)}
   data-event-id={String(r.eventId)}
-  data-char-name={r.charName ?? ''}
-  data-char-grade={r.charGrade != null ? String(r.charGrade) : ''}
-  data-char-job={r.charJob ?? ''}
-  data-char-jobnum={r.charJobNum ?? ''}
-  data-char-eet={r.charEET ?? ''}
-  data-char-eetnum={r.charEETNum ?? ''}
+  data-char-name={r.charName ?? ""}
+  data-char-grade={r.charGrade != null ? String(r.charGrade) : ""}
+  data-char-job={r.charJob ?? ""}
+  data-char-jobnum={r.charJobNum ?? ""}
+  data-char-eet={r.charEET ?? ""}
+  data-char-eetnum={r.charEETNum ?? ""}
   data-landmark-id={String(r.landmarkId)}
-  data-landmark-name={r.landmarkName ?? ''}
+  data-landmark-name={r.landmarkName ?? ""}
   data-change={r.changeType}
   data-search={r.searchIndex}
 >
   {
     r.eventCg && (
       <div class="card-media">
-        <img
+        <AssetImage
           class="card-cg"
-          src={datingEventCgImg}
-          onerror={onImgError()}
-          alt={r.eventName ?? 'Event CG'}
-          loading="lazy"
-          decoding="async"
-          width="400"
-          height="225"
+          src={cgImg}
+          alt={r.eventName ?? "Event CG"}
+          width={400}
+          height={225}
         />
-        {r.changeType === 'added' && (
+        {r.changeType === "added" && (
           <span class="chip chip-new" data-i18n="changeAdded">
             {changeAdded}
           </span>
         )}
-        {r.changeType === 'modified' && (
+        {r.changeType === "modified" && (
           <span class="chip chip-mod" data-i18n="changeModified">
             {changeModified}
           </span>
@@ -70,23 +68,17 @@ const charAvatarImg = asset(`head/${avatar}.webp`);
   }
 
   <div class="card-body">
-    <h3>{r.eventName || '(unknown)'}</h3>
+    <h3>{r.eventName || "(unknown)"}</h3>
 
     <div class="meta">
-      {
-        avatar && (
-          <img
-            class="char-avatar"
-            src={charAvatarImg}
-            alt={r.charName ?? ''}
-            loading="lazy"
-            decoding="async"
-            width="24"
-            height="24"
-            onerror={onImgError()}
-          />
-        )
-      }
+      <AssetImage
+        class="char-avatar"
+        src={headImg}
+        alt={r.charName ?? ""}
+        width={24}
+        height={24}
+        fallbackAlt=""
+      />
 
       {
         r.charName && (
