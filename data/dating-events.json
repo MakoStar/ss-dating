@@ -1308,6 +1308,50 @@
         "eventOption": "一起去泡温泉吧。"
       }
     },
+    "139": {
+      "6": {
+        "charId": 139,
+        "eventId": 139302,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "艾蕾",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139302",
+        "landmarkName": "甜品屋",
+        "eventName": "烤糊的蛋糕",
+        "eventClue": "在甜品屋的话，或许会发现些什么……",
+        "eventOption": "没尝够，再点一些。"
+      },
+      "14": {
+        "charId": 139,
+        "eventId": 139301,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "艾蕾",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139301",
+        "landmarkName": "学院",
+        "eventName": "叫家长",
+        "eventClue": "在学院的话，或许会发现些什么……",
+        "eventOption": "去图书馆逛逛。"
+      }
+    },
     "140": {
       "7": {
         "charId": 140,
@@ -3360,6 +3404,50 @@
         "eventName": "Diving in the Hot Spring",
         "eventClue": "Visit Hot Spring Resort to unlock",
         "eventOption": "Let’s go soak in the hot springs."
+      }
+    },
+    "139": {
+      "6": {
+        "charId": 139,
+        "eventId": 139302,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "Allie",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "Aqua",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139302",
+        "landmarkName": "The Dessert Shop",
+        "eventName": "The Charcoal Cake",
+        "eventClue": "Visit the Dessert Shop to unlock",
+        "eventOption": "Haven't had enough. Let's order some more."
+      },
+      "14": {
+        "charId": 139,
+        "eventId": 139301,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "Allie",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "Aqua",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139301",
+        "landmarkName": "The Academy",
+        "eventName": "Call Your Parents",
+        "eventClue": "Visit the Academy to unlock",
+        "eventOption": "Gonna look around inside the library."
       }
     },
     "140": {
@@ -5416,6 +5504,50 @@
         "eventOption": "一緒に温泉に入ろう。"
       }
     },
+    "139": {
+      "6": {
+        "charId": 139,
+        "eventId": 139302,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "エリー",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水属性",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139302",
+        "landmarkName": "スイーツショップ",
+        "eventName": "黒こげケーキ",
+        "eventClue": "スイーツショップでなにかが見つかるかもしれない……",
+        "eventOption": "まだ物足りない、もう少し注文しよう。"
+      },
+      "14": {
+        "charId": 139,
+        "eventId": 139301,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "エリー",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水属性",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139301",
+        "landmarkName": "学園",
+        "eventName": "保護者呼び出し",
+        "eventClue": "学園でなにかが見つかるかもしれない……",
+        "eventOption": "図書館に行ってみよう。"
+      }
+    },
     "140": {
       "7": {
         "charId": 140,
@@ -7470,6 +7602,50 @@
         "eventOption": "함께 온천을 가자."
       }
     },
+    "139": {
+      "6": {
+        "charId": 139,
+        "eventId": 139302,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "엘리",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "물 속성",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139302",
+        "landmarkName": "디저트 카페",
+        "eventName": "다 타버린 케이크",
+        "eventClue": "디저트 카페에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "아직 부족하다. 조금 더 주문하자."
+      },
+      "14": {
+        "charId": 139,
+        "eventId": 139301,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "엘리",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "물 속성",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139301",
+        "landmarkName": "학원",
+        "eventName": "보호자 호출",
+        "eventClue": "학원에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "도서관에 가서 살펴보자."
+      }
+    },
     "140": {
       "7": {
         "charId": 140,
@@ -9522,6 +9698,50 @@
         "eventName": "溫泉潛水員",
         "eventClue": "在溫泉渡假村或許會發現些什麼…",
         "eventOption": "一起去泡溫泉吧。"
+      }
+    },
+    "139": {
+      "6": {
+        "charId": 139,
+        "eventId": 139302,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "艾蕾",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139302",
+        "landmarkName": "甜點店",
+        "eventName": "烤焦的蛋糕",
+        "eventClue": "在甜點店或許會發現些什麼…",
+        "eventOption": "沒嘗夠，再點一些。"
+      },
+      "14": {
+        "charId": 139,
+        "eventId": 139301,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "艾蕾",
+        "charGrade": 5,
+        "enCharName": "Allie",
+        "charColor": "#555559",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_139301",
+        "landmarkName": "學院",
+        "eventName": "請家長到校",
+        "eventClue": "在學院或許會發現些什麼…",
+        "eventOption": "去圖書館逛逛。"
       }
     },
     "140": {
