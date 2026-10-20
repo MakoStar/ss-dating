@@ -42,6 +42,27 @@
         "eventName": "打菜奇遇",
         "eventClue": "在学院的话，或许会发现些什么……",
         "eventOption": "饿了，想去食堂。"
+      },
+      "17": {
+        "charId": 103,
+        "eventId": 103304,
+        "branchTag": 2,
+        "landmarkId": 17,
+        "charName": "琥珀",
+        "charGrade": 4,
+        "enCharName": "Amber",
+        "charColor": "#99d2d9",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "火系",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_103304",
+        "landmarkName": "温泉度假村",
+        "eventName": "球台对决",
+        "eventClue": "在温泉度假村的话，或许会发现些什么……",
+        "eventOption": "一起来玩弹弹球吧。"
       }
     },
     "107": {
@@ -86,6 +107,27 @@
         "eventName": "当场破案",
         "eventClue": "在集市的话，或许会发现些什么……",
         "eventOption": "那是什么？好可疑啊。"
+      },
+      "17": {
+        "charId": 107,
+        "eventId": 107303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "缇莉娅",
+        "charGrade": 4,
+        "enCharName": "Tilia",
+        "charColor": "#3d5bbf",
+        "charJob": "辅助",
+        "charJobNum": 103,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_107303",
+        "landmarkName": "温泉度假村",
+        "eventName": "被阻止的“特训”",
+        "eventClue": "在温泉度假村的话，或许会发现些什么……",
+        "eventOption": "一起去泡温泉吧。"
       }
     },
     "108": {
@@ -154,6 +196,27 @@
       }
     },
     "110": {
+      "7": {
+        "charId": 110,
+        "eventId": 110303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "翡冷翠",
+        "charGrade": 5,
+        "enCharName": "Firenze",
+        "charColor": "#8db947",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 6,
+        "charEET": "暗系",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_110303",
+        "landmarkName": "集市",
+        "eventName": "“情侣”逛街",
+        "eventClue": "在集市的话，或许会发现些什么……",
+        "eventOption": "那一片还没有逛过。"
+      },
       "8": {
         "charId": 110,
         "eventId": 110302,
@@ -239,6 +302,27 @@
         "eventName": "书间闲谈",
         "eventClue": "在学院的话，或许会发现些什么……",
         "eventOption": "去图书馆逛逛。"
+      },
+      "17": {
+        "charId": 111,
+        "eventId": 111304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "鸢尾",
+        "charGrade": 4,
+        "enCharName": "Iris",
+        "charColor": "#9392ca",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_111304",
+        "landmarkName": "温泉度假村",
+        "eventName": "孩子气",
+        "eventClue": "在温泉度假村的话，或许会发现些什么……",
+        "eventOption": "一起去泡温泉吧。"
       }
     },
     "112": {
@@ -283,6 +367,27 @@
         "eventName": "专业人士",
         "eventClue": "在集市的话，或许会发现些什么……",
         "eventOption": "那边好像有表演。"
+      },
+      "17": {
+        "charId": 112,
+        "eventId": 112303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "尘沙",
+        "charGrade": 4,
+        "enCharName": "Noya",
+        "charColor": "#ffe39e",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "风系",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_112303",
+        "landmarkName": "温泉度假村",
+        "eventName": "麦霸的诞生",
+        "eventClue": "在温泉度假村的话，或许会发现些什么……",
+        "eventOption": "一起去泡温泉吧。"
       }
     },
     "113": {
@@ -589,6 +694,27 @@
         "eventName": "新鲜出土",
         "eventClue": "在洞窟的话，或许会发现些什么……",
         "eventOption": "继续向最深处探索。"
+      },
+      "7": {
+        "charId": 118,
+        "eventId": 118304,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "科洛妮丝",
+        "charGrade": 4,
+        "enCharName": "Coronis",
+        "charColor": "#cfbf93",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "暗系",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_118304",
+        "landmarkName": "集市",
+        "eventName": "另有他用",
+        "eventClue": "在集市的话，或许会发现些什么……",
+        "eventOption": "那一片还没有逛过。"
       },
       "14": {
         "charId": 118,
@@ -1003,6 +1129,27 @@
       }
     },
     "130": {
+      "5": {
+        "charId": 130,
+        "eventId": 130303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "多娜",
+        "charGrade": 5,
+        "enCharName": "Donna",
+        "charColor": "#e9be88",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_130303",
+        "landmarkName": "洞窟",
+        "eventName": "飞走的信",
+        "eventClue": "在洞窟的话，或许会发现些什么……",
+        "eventOption": "继续向最深处探索。"
+      },
       "7": {
         "charId": 130,
         "eventId": 130301,
@@ -1153,6 +1300,27 @@
         "eventName": "水车转不停",
         "eventClue": "在港口的话，或许会发现些什么……",
         "eventOption": "来一次小舟临海观光。"
+      },
+      "14": {
+        "charId": 133,
+        "eventId": 133303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "夏花",
+        "charGrade": 5,
+        "enCharName": "Nazuka",
+        "charColor": "#6fb1d2",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 4,
+        "charEET": "风系",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_133303",
+        "landmarkName": "学院",
+        "eventName": "为你吟诗",
+        "eventClue": "在学院的话，或许会发现些什么……",
+        "eventOption": "去图书馆逛逛。"
       }
     },
     "134": {
@@ -1197,6 +1365,27 @@
         "eventName": "一日店长",
         "eventClue": "在甜品屋的话，或许会发现些什么……",
         "eventOption": "没尝够，再点一些。"
+      },
+      "17": {
+        "charId": 134,
+        "eventId": 134303,
+        "branchTag": 3,
+        "landmarkId": 17,
+        "charName": "冬香",
+        "charGrade": 5,
+        "enCharName": "Fuyuka",
+        "charColor": "#f8be56",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "火系",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_134303",
+        "landmarkName": "温泉度假村",
+        "eventName": "牛奶有益健康",
+        "eventClue": "在温泉度假村的话，或许会发现些什么……",
+        "eventOption": "闲逛一会。"
       }
     },
     "135": {
@@ -1503,6 +1692,27 @@
         "eventName": "闪烁的诱惑",
         "eventClue": "在集市的话，或许会发现些什么……",
         "eventOption": "那一片还没有逛过。"
+      },
+      "14": {
+        "charId": 142,
+        "eventId": 142303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "珂赛特",
+        "charGrade": 4,
+        "enCharName": "Cosette",
+        "charColor": "#7795d8",
+        "charJob": "辅助",
+        "charJobNum": 103,
+        "charEETNum": 6,
+        "charEET": "暗系",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_142303",
+        "landmarkName": "学院",
+        "eventName": "学习",
+        "eventClue": "在学院的话，或许会发现些什么……",
+        "eventOption": "去图书馆逛逛。"
       }
     },
     "143": {
@@ -1526,6 +1736,27 @@
         "eventName": "“温”泉？",
         "eventClue": "在洞窟的话，或许会发现些什么……",
         "eventOption": "继续向最深处探索。"
+      },
+      "6": {
+        "charId": 143,
+        "eventId": 143303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "风影",
+        "charGrade": 5,
+        "enCharName": "Wraith",
+        "charColor": "#5e6cb5",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "风系",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_143303",
+        "landmarkName": "甜品屋",
+        "eventName": "西瓜冰",
+        "eventClue": "在甜品屋的话，或许会发现些什么……",
+        "eventOption": "没尝够，再点一些。"
       },
       "7": {
         "charId": 143,
@@ -1570,6 +1801,27 @@
         "eventName": "糖淬锻刀",
         "eventClue": "在甜品屋的话，或许会发现些什么……",
         "eventOption": "没尝够，再点一些。"
+      },
+      "7": {
+        "charId": 144,
+        "eventId": 144303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "千都世",
+        "charGrade": 5,
+        "enCharName": "Chitose",
+        "charColor": "#a87dc0",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_144303",
+        "landmarkName": "集市",
+        "eventName": "嫉妒心理",
+        "eventClue": "在集市的话，或许会发现些什么……",
+        "eventOption": "那一片还没有逛过。"
       },
       "8": {
         "charId": 144,
@@ -1635,6 +1887,27 @@
         "eventName": "海平线之外",
         "eventClue": "在港口的话，或许会发现些什么……",
         "eventOption": "来一次小舟临海观光。"
+      },
+      "14": {
+        "charId": 145,
+        "eventId": 145303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "乙叶",
+        "charGrade": 5,
+        "enCharName": "Otoha",
+        "charColor": "#90a1c6",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "暗系",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_145303",
+        "landmarkName": "学院",
+        "eventName": "学院之约",
+        "eventClue": "在学院的话，或许会发现些什么……",
+        "eventOption": "去图书馆逛逛。"
       }
     },
     "147": {
@@ -1809,6 +2082,27 @@
         "eventName": "港区钓鱼指南",
         "eventClue": "在港口的话，或许会发现些什么……",
         "eventOption": "要不要现在来一场夜钓？"
+      },
+      "17": {
+        "charId": 150,
+        "eventId": 150304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "菈露",
+        "charGrade": 4,
+        "enCharName": "Laru",
+        "charColor": "#c5bbb5",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_150304",
+        "landmarkName": "温泉度假村",
+        "eventName": "温泉鱼",
+        "eventClue": "在温泉度假村的话，或许会发现些什么……",
+        "eventOption": "一起去泡温泉吧。"
       }
     },
     "155": {
@@ -1832,6 +2126,27 @@
         "eventName": "暗河漂流",
         "eventClue": "在洞窟的话，或许会发现些什么……",
         "eventOption": "继续向最深处探索。"
+      },
+      "6": {
+        "charId": 155,
+        "eventId": 155303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "希娅",
+        "charGrade": 5,
+        "enCharName": "Shia",
+        "charColor": "#c4a5e6",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_155303",
+        "landmarkName": "甜品屋",
+        "eventName": "仰望星塔",
+        "eventClue": "在甜品屋的话，或许会发现些什么……",
+        "eventOption": "没尝够，再点一些。"
       },
       "8": {
         "charId": 155,
@@ -1965,6 +2280,27 @@
       }
     },
     "158": {
+      "5": {
+        "charId": 158,
+        "eventId": 158303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "菈露（圣夜）",
+        "charGrade": 5,
+        "enCharName": "Snowish Laru",
+        "charColor": "#79092e",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 2,
+        "charEET": "火系",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_158303",
+        "landmarkName": "洞窟",
+        "eventName": "别有洞天",
+        "eventClue": "在洞窟的话，或许会发现些什么……",
+        "eventOption": "继续向最深处探索。"
+      },
       "7": {
         "charId": 158,
         "eventId": 158301,
@@ -2029,6 +2365,27 @@
         "eventName": "“寻找图腾”",
         "eventClue": "在洞窟的话，或许会发现些什么……",
         "eventOption": "继续向最深处探索。"
+      },
+      "6": {
+        "charId": 159,
+        "eventId": 159303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "科洛妮丝（新春）",
+        "charGrade": 5,
+        "enCharName": "Springseek Coronis",
+        "charColor": "#c553a5",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 3,
+        "charEET": "地系",
+        "charEETColor": "#a1673d",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_159303",
+        "landmarkName": "甜品屋",
+        "eventName": "蛋糕的奥秘",
+        "eventClue": "在甜品屋的话，或许会发现些什么……",
+        "eventOption": "没尝够，再点一些。"
       },
       "7": {
         "charId": 159,
@@ -2095,6 +2452,50 @@
         "eventClue": "在温泉度假村的话，或许会发现些什么……",
         "eventOption": "闲逛一会。"
       }
+    },
+    "162": {
+      "18": {
+        "charId": 162,
+        "eventId": 162301,
+        "branchTag": 1,
+        "landmarkId": 18,
+        "charName": "尘沙（源初）",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162301",
+        "landmarkName": "菲兰尼斯大街",
+        "eventName": "不甘心",
+        "eventClue": "在菲兰尼斯大街上的话，或许会发现些什么……",
+        "eventOption": "慢慢散步。"
+      },
+      "20": {
+        "charId": 162,
+        "eventId": 162302,
+        "branchTag": 1,
+        "landmarkId": 20,
+        "charName": "尘沙（源初）",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "先锋",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162302",
+        "landmarkName": "因苏拉",
+        "eventName": "暖意",
+        "eventClue": "在因苏拉的话，或许会发现些什么……",
+        "eventOption": "快点进屋吧。"
+      }
     }
   },
   "EN": {
@@ -2140,6 +2541,27 @@
         "eventName": "Cafeteria Trick",
         "eventClue": "Visit the Academy to unlock",
         "eventOption": "Getting hungry. Gonna go to the cafeteria."
+      },
+      "17": {
+        "charId": 103,
+        "eventId": 103304,
+        "branchTag": 2,
+        "landmarkId": 17,
+        "charName": "Amber",
+        "charGrade": 4,
+        "enCharName": "Amber",
+        "charColor": "#99d2d9",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "Ignis",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_103304",
+        "landmarkName": "Hot Spring Resort",
+        "eventName": "Bouncy Ball Showdown",
+        "eventClue": "Visit Hot Spring Resort to unlock",
+        "eventOption": "Let’s play some ping-pong."
       }
     },
     "107": {
@@ -2184,6 +2606,27 @@
         "eventName": "Solved On the Spot",
         "eventClue": "Visit the Market to unlock",
         "eventOption": "What's that? Looks suspicious."
+      },
+      "17": {
+        "charId": 107,
+        "eventId": 107303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "Tilia",
+        "charGrade": 4,
+        "enCharName": "Tilia",
+        "charColor": "#3d5bbf",
+        "charJob": "Support",
+        "charJobNum": 103,
+        "charEETNum": 5,
+        "charEET": "Lux",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_107303",
+        "landmarkName": "Hot Spring Resort",
+        "eventName": "Training Canceled",
+        "eventClue": "Visit Hot Spring Resort to unlock",
+        "eventOption": "Let’s go soak in the hot springs."
       }
     },
     "108": {
@@ -2252,6 +2695,27 @@
       }
     },
     "110": {
+      "7": {
+        "charId": 110,
+        "eventId": 110303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "Firenze",
+        "charGrade": 5,
+        "enCharName": "Firenze",
+        "charColor": "#8db947",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 6,
+        "charEET": "Umbra",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_110303",
+        "landmarkName": "The Market",
+        "eventName": "A \"Romantic\" Stroll",
+        "eventClue": "Visit the Market to unlock",
+        "eventOption": "Haven't been to that area yet."
+      },
       "8": {
         "charId": 110,
         "eventId": 110302,
@@ -2337,6 +2801,27 @@
         "eventName": "Library Talk",
         "eventClue": "Visit the Academy to unlock",
         "eventOption": "Gonna look around inside the library."
+      },
+      "17": {
+        "charId": 111,
+        "eventId": 111304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "Iris",
+        "charGrade": 4,
+        "enCharName": "Iris",
+        "charColor": "#9392ca",
+        "charJob": "Versatile",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "Aqua",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_111304",
+        "landmarkName": "Hot Spring Resort",
+        "eventName": "Childish Antics",
+        "eventClue": "Visit Hot Spring Resort to unlock",
+        "eventOption": "Let’s go soak in the hot springs."
       }
     },
     "112": {
@@ -2381,6 +2866,27 @@
         "eventName": "The Professional",
         "eventClue": "Visit the Market to unlock",
         "eventOption": "There's a show over there."
+      },
+      "17": {
+        "charId": 112,
+        "eventId": 112303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "Noya",
+        "charGrade": 4,
+        "enCharName": "Noya",
+        "charColor": "#ffe39e",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "Ventus",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_112303",
+        "landmarkName": "Hot Spring Resort",
+        "eventName": "The Jukebox Queen",
+        "eventClue": "Visit Hot Spring Resort to unlock",
+        "eventOption": "Let’s go soak in the hot springs."
       }
     },
     "113": {
@@ -2687,6 +3193,27 @@
         "eventName": "Freshly Unearthed",
         "eventClue": "Visit the Cave to unlock",
         "eventOption": "Keep exploring deeper."
+      },
+      "7": {
+        "charId": 118,
+        "eventId": 118304,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "Coronis",
+        "charGrade": 4,
+        "enCharName": "Coronis",
+        "charColor": "#cfbf93",
+        "charJob": "Versatile",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "Umbra",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_118304",
+        "landmarkName": "The Market",
+        "eventName": "Alternative Use",
+        "eventClue": "Visit the Market to unlock",
+        "eventOption": "Haven't been to that area yet."
       },
       "14": {
         "charId": 118,
@@ -3101,6 +3628,27 @@
       }
     },
     "130": {
+      "5": {
+        "charId": 130,
+        "eventId": 130303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "Donna",
+        "charGrade": 5,
+        "enCharName": "Donna",
+        "charColor": "#e9be88",
+        "charJob": "Versatile",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "Aqua",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_130303",
+        "landmarkName": "The Cave",
+        "eventName": "Blown Away",
+        "eventClue": "Visit the Cave to unlock",
+        "eventOption": "Keep exploring deeper."
+      },
       "7": {
         "charId": 130,
         "eventId": 130301,
@@ -3251,6 +3799,27 @@
         "eventName": "Ever-Turning Waterwheel",
         "eventClue": "Visit the Port to unlock",
         "eventOption": "Take a small boat out for some coastal sightseeing."
+      },
+      "14": {
+        "charId": 133,
+        "eventId": 133303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "Nazuka",
+        "charGrade": 5,
+        "enCharName": "Nazuka",
+        "charColor": "#6fb1d2",
+        "charJob": "Versatile",
+        "charJobNum": 102,
+        "charEETNum": 4,
+        "charEET": "Ventus",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_133303",
+        "landmarkName": "The Academy",
+        "eventName": "Poems for You",
+        "eventClue": "Visit the Academy to unlock",
+        "eventOption": "Gonna look around inside the library."
       }
     },
     "134": {
@@ -3295,6 +3864,27 @@
         "eventName": "Manager for a Day",
         "eventClue": "Visit the Dessert Shop to unlock",
         "eventOption": "Haven't had enough. Let's order some more."
+      },
+      "17": {
+        "charId": 134,
+        "eventId": 134303,
+        "branchTag": 3,
+        "landmarkId": 17,
+        "charName": "Fuyuka",
+        "charGrade": 5,
+        "enCharName": "Fuyuka",
+        "charColor": "#f8be56",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "Ignis",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_134303",
+        "landmarkName": "Hot Spring Resort",
+        "eventName": "Healthy Habit",
+        "eventClue": "Visit Hot Spring Resort to unlock",
+        "eventOption": "Wander around for a bit."
       }
     },
     "135": {
@@ -3601,6 +4191,27 @@
         "eventName": "The Lure of the Bling-Bling",
         "eventClue": "Visit the Market to unlock",
         "eventOption": "Haven't been to that area yet."
+      },
+      "14": {
+        "charId": 142,
+        "eventId": 142303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "Cosette",
+        "charGrade": 4,
+        "enCharName": "Cosette",
+        "charColor": "#7795d8",
+        "charJob": "Support",
+        "charJobNum": 103,
+        "charEETNum": 6,
+        "charEET": "Umbra",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_142303",
+        "landmarkName": "The Academy",
+        "eventName": "Hitting the Books",
+        "eventClue": "Visit the Academy to unlock",
+        "eventOption": "Gonna look around inside the library."
       }
     },
     "143": {
@@ -3624,6 +4235,27 @@
         "eventName": "\"Hot\" Springs?",
         "eventClue": "Visit the Cave to unlock",
         "eventOption": "Keep exploring deeper."
+      },
+      "6": {
+        "charId": 143,
+        "eventId": 143303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "Wraith",
+        "charGrade": 5,
+        "enCharName": "Wraith",
+        "charColor": "#5e6cb5",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "Ventus",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_143303",
+        "landmarkName": "The Dessert Shop",
+        "eventName": "Watermelon Ice Pop",
+        "eventClue": "Visit the Dessert Shop to unlock",
+        "eventOption": "Haven't had enough. Let's order some more."
       },
       "7": {
         "charId": 143,
@@ -3668,6 +4300,27 @@
         "eventName": "A Sugar-Tempered Blade",
         "eventClue": "Visit the Dessert Shop to unlock",
         "eventOption": "Haven't had enough. Let's order some more."
+      },
+      "7": {
+        "charId": 144,
+        "eventId": 144303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "Chitose",
+        "charGrade": 5,
+        "enCharName": "Chitose",
+        "charColor": "#a87dc0",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "Aqua",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_144303",
+        "landmarkName": "The Market",
+        "eventName": "A Hint of Jealousy",
+        "eventClue": "Visit the Market to unlock",
+        "eventOption": "Haven't been to that area yet."
       },
       "8": {
         "charId": 144,
@@ -3733,6 +4386,27 @@
         "eventName": "Beyond the Horizon",
         "eventClue": "Visit the Port to unlock",
         "eventOption": "Take a small boat out for some coastal sightseeing."
+      },
+      "14": {
+        "charId": 145,
+        "eventId": 145303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "Otoha",
+        "charGrade": 5,
+        "enCharName": "Otoha",
+        "charColor": "#90a1c6",
+        "charJob": "Versatile",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "Umbra",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_145303",
+        "landmarkName": "The Academy",
+        "eventName": "Campus Rendezvous",
+        "eventClue": "Visit the Academy to unlock",
+        "eventOption": "Gonna look around inside the library."
       }
     },
     "147": {
@@ -3907,6 +4581,27 @@
         "eventName": "Port Fishing Guide",
         "eventClue": "Visit the Port to unlock",
         "eventOption": "How about doing some night fishing?"
+      },
+      "17": {
+        "charId": 150,
+        "eventId": 150304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "Laru",
+        "charGrade": 4,
+        "enCharName": "Laru",
+        "charColor": "#c5bbb5",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "Lux",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_150304",
+        "landmarkName": "Hot Spring Resort",
+        "eventName": "Hot Spring Fish",
+        "eventClue": "Visit Hot Spring Resort to unlock",
+        "eventOption": "Let’s go soak in the hot springs."
       }
     },
     "155": {
@@ -3930,6 +4625,27 @@
         "eventName": "Underground Drift",
         "eventClue": "Visit the Cave to unlock",
         "eventOption": "Keep exploring deeper."
+      },
+      "6": {
+        "charId": 155,
+        "eventId": 155303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "Shia",
+        "charGrade": 5,
+        "enCharName": "Shia",
+        "charColor": "#c4a5e6",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "Lux",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_155303",
+        "landmarkName": "The Dessert Shop",
+        "eventName": "Sky-gazy Pie",
+        "eventClue": "Visit the Dessert Shop to unlock",
+        "eventOption": "Haven't had enough. Let's order some more."
       },
       "8": {
         "charId": 155,
@@ -4063,6 +4779,27 @@
       }
     },
     "158": {
+      "5": {
+        "charId": 158,
+        "eventId": 158303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "Snowish Laru",
+        "charGrade": 5,
+        "enCharName": "Snowish Laru",
+        "charColor": "#79092e",
+        "charJob": "Versatile",
+        "charJobNum": 102,
+        "charEETNum": 2,
+        "charEET": "Ignis",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_158303",
+        "landmarkName": "The Cave",
+        "eventName": "Surprise",
+        "eventClue": "Visit the Cave to unlock",
+        "eventOption": "Keep exploring deeper."
+      },
       "7": {
         "charId": 158,
         "eventId": 158301,
@@ -4127,6 +4864,27 @@
         "eventName": "In Search of Totems",
         "eventClue": "Visit the Cave to unlock",
         "eventOption": "Keep exploring deeper."
+      },
+      "6": {
+        "charId": 159,
+        "eventId": 159303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "Springseek Coronis",
+        "charGrade": 5,
+        "enCharName": "Springseek Coronis",
+        "charColor": "#c553a5",
+        "charJob": "Versatile",
+        "charJobNum": 102,
+        "charEETNum": 3,
+        "charEET": "Terra",
+        "charEETColor": "#a1673d",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_159303",
+        "landmarkName": "The Dessert Shop",
+        "eventName": "Cake Anatomy",
+        "eventClue": "Visit the Dessert Shop to unlock",
+        "eventOption": "Haven't had enough. Let's order some more."
       },
       "7": {
         "charId": 159,
@@ -4193,6 +4951,50 @@
         "eventClue": "Visit Hot Spring Resort to unlock",
         "eventOption": "Wander around for a bit."
       }
+    },
+    "162": {
+      "18": {
+        "charId": 162,
+        "eventId": 162301,
+        "branchTag": 1,
+        "landmarkId": 18,
+        "charName": "Firstlight Noya",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "Lux",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162301",
+        "landmarkName": "Filanis Street",
+        "eventName": "A Bitter Defeat",
+        "eventClue": "Visit the streets of Filanis to unlock",
+        "eventOption": "Take a stroll."
+      },
+      "20": {
+        "charId": 162,
+        "eventId": 162302,
+        "branchTag": 1,
+        "landmarkId": 20,
+        "charName": "Firstlight Noya",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "Vanguard",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "Lux",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162302",
+        "landmarkName": "Insura",
+        "eventName": "Warmth",
+        "eventClue": "Visit Insura to unlock",
+        "eventOption": "Let's go inside."
+      }
     }
   },
   "JP": {
@@ -4238,6 +5040,27 @@
         "eventName": "奇妙な盛り付け",
         "eventClue": "学園で\r\nなにかが見つかる\r\nかもしれない……",
         "eventOption": "お腹がすいた、食堂に行こう。"
+      },
+      "17": {
+        "charId": 103,
+        "eventId": 103304,
+        "branchTag": 2,
+        "landmarkId": 17,
+        "charName": "コハク",
+        "charGrade": 4,
+        "enCharName": "Amber",
+        "charColor": "#99d2d9",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "火属性",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_103304",
+        "landmarkName": "温泉リゾート",
+        "eventName": "卓球対決",
+        "eventClue": "温泉リゾートでなにかが見つかるかもしれない……",
+        "eventOption": "一緒に卓球をやろう。"
       }
     },
     "107": {
@@ -4282,6 +5105,27 @@
         "eventName": "事件解決",
         "eventClue": "マーケットでなにかが見つかるかもしれない……",
         "eventOption": "あれは……なんだろう？"
+      },
+      "17": {
+        "charId": 107,
+        "eventId": 107303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "ティリア",
+        "charGrade": 4,
+        "enCharName": "Tilia",
+        "charColor": "#3d5bbf",
+        "charJob": "サポーター",
+        "charJobNum": 103,
+        "charEETNum": 5,
+        "charEET": "光属性",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_107303",
+        "landmarkName": "温泉リゾート",
+        "eventName": "止められた「特訓」",
+        "eventClue": "温泉リゾートでなにかが見つかるかもしれない……",
+        "eventOption": "一緒に温泉に入ろう。"
       }
     },
     "108": {
@@ -4350,6 +5194,27 @@
       }
     },
     "110": {
+      "7": {
+        "charId": 110,
+        "eventId": 110303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "フィレン",
+        "charGrade": 5,
+        "enCharName": "Firenze",
+        "charColor": "#8db947",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 6,
+        "charEET": "闇属性",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_110303",
+        "landmarkName": "マーケット",
+        "eventName": "現地調査？",
+        "eventClue": "マーケットでなにかが見つかるかもしれない……",
+        "eventOption": "あのあたりはまだ見てないな。"
+      },
       "8": {
         "charId": 110,
         "eventId": 110302,
@@ -4435,6 +5300,27 @@
         "eventName": "図書館での雑談",
         "eventClue": "学園で\r\nなにかが見つかる\r\nかもしれない……",
         "eventOption": "図書館に行ってみよう。"
+      },
+      "17": {
+        "charId": 111,
+        "eventId": 111304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "アヤメ",
+        "charGrade": 4,
+        "enCharName": "Iris",
+        "charColor": "#9392ca",
+        "charJob": "バランサー",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "水属性",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_111304",
+        "landmarkName": "温泉リゾート",
+        "eventName": "子どもっぽさ",
+        "eventClue": "温泉リゾートでなにかが見つかるかもしれない……",
+        "eventOption": "一緒に温泉に入ろう。"
       }
     },
     "112": {
@@ -4479,6 +5365,27 @@
         "eventName": "巡遊者は伊達じゃない",
         "eventClue": "マーケットでなにかが見つかるかもしれない……",
         "eventOption": "あっちで何かパフォーマンスをしてる。"
+      },
+      "17": {
+        "charId": 112,
+        "eventId": 112303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "セイナ",
+        "charGrade": 4,
+        "enCharName": "Noya",
+        "charColor": "#ffe39e",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "風属性",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_112303",
+        "landmarkName": "温泉リゾート",
+        "eventName": "誕生・マイクの女王",
+        "eventClue": "温泉リゾートでなにかが見つかるかもしれない……",
+        "eventOption": "一緒に温泉に入ろう。"
       }
     },
     "113": {
@@ -4785,6 +5692,27 @@
         "eventName": "採集は鮮度が命",
         "eventClue": "洞窟で\r\nなにかが見つかる\r\nかもしれない……",
         "eventOption": "さらに奥へ進もう。"
+      },
+      "7": {
+        "charId": 118,
+        "eventId": 118304,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "クルニス",
+        "charGrade": 4,
+        "enCharName": "Coronis",
+        "charColor": "#cfbf93",
+        "charJob": "バランサー",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "闇属性",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_118304",
+        "landmarkName": "マーケット",
+        "eventName": "別の使い道",
+        "eventClue": "マーケットでなにかが見つかるかもしれない……",
+        "eventOption": "あのあたりはまだ見てないな。"
       },
       "14": {
         "charId": 118,
@@ -5199,6 +6127,27 @@
       }
     },
     "130": {
+      "5": {
+        "charId": 130,
+        "eventId": 130303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "トーナ",
+        "charGrade": 5,
+        "enCharName": "Donna",
+        "charColor": "#e9be88",
+        "charJob": "バランサー",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "水属性",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_130303",
+        "landmarkName": "洞窟",
+        "eventName": "飛ばされた手紙",
+        "eventClue": "洞窟でなにかが見つかるかもしれない……",
+        "eventOption": "さらに奥へ進もう。"
+      },
       "7": {
         "charId": 130,
         "eventId": 130301,
@@ -5349,6 +6298,27 @@
         "eventName": "止まらない水車",
         "eventClue": "港でなにかが見つかるかもしれない……",
         "eventOption": "小舟で海を観光してみよう。"
+      },
+      "14": {
+        "charId": 133,
+        "eventId": 133303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "ナツカ",
+        "charGrade": 5,
+        "enCharName": "Nazuka",
+        "charColor": "#6fb1d2",
+        "charJob": "バランサー",
+        "charJobNum": 102,
+        "charEETNum": 4,
+        "charEET": "風属性",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_133303",
+        "landmarkName": "学園",
+        "eventName": "詩を、あなたに",
+        "eventClue": "学園の中でなにかが見つかるかもしれない……",
+        "eventOption": "図書館に行ってみよう。"
       }
     },
     "134": {
@@ -5393,6 +6363,27 @@
         "eventName": "一日店長",
         "eventClue": "スイーツショップでなにかが見つかるかもしれない……",
         "eventOption": "まだ物足りない、もう少し注文しよう。"
+      },
+      "17": {
+        "charId": 134,
+        "eventId": 134303,
+        "branchTag": 3,
+        "landmarkId": 17,
+        "charName": "フユカ",
+        "charGrade": 5,
+        "enCharName": "Fuyuka",
+        "charColor": "#f8be56",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "火属性",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_134303",
+        "landmarkName": "温泉リゾート",
+        "eventName": "牛乳は体にいい",
+        "eventClue": "温泉リゾートでなにかが見つかるかもしれない……",
+        "eventOption": "少し散策してこよう。"
       }
     },
     "135": {
@@ -5699,6 +6690,27 @@
         "eventName": "あまえ上手",
         "eventClue": "マーケットでなにかが見つかるかもしれない……",
         "eventOption": "あのあたりはまだ見てないな。"
+      },
+      "14": {
+        "charId": 142,
+        "eventId": 142303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "コゼット",
+        "charGrade": 4,
+        "enCharName": "Cosette",
+        "charColor": "#7795d8",
+        "charJob": "サポーター",
+        "charJobNum": 103,
+        "charEETNum": 6,
+        "charEET": "闇属性",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_142303",
+        "landmarkName": "学園",
+        "eventName": "学び",
+        "eventClue": "学園の中でなにかが見つかるかもしれない……",
+        "eventOption": "図書館に行ってみよう。"
       }
     },
     "143": {
@@ -5722,6 +6734,27 @@
         "eventName": "『温』泉？",
         "eventClue": "洞窟でなにかが見つかるかもしれない……",
         "eventOption": "さらに奥へ進もう。"
+      },
+      "6": {
+        "charId": 143,
+        "eventId": 143303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "レイス",
+        "charGrade": 5,
+        "enCharName": "Wraith",
+        "charColor": "#5e6cb5",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "風属性",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_143303",
+        "landmarkName": "スイーツショップ",
+        "eventName": "スイカアイス",
+        "eventClue": "スイーツショップでなにかが見つかるかもしれない……",
+        "eventOption": "まだ物足りない、もう少し注文しよう。"
       },
       "7": {
         "charId": 143,
@@ -5766,6 +6799,27 @@
         "eventName": "鍛冶のプロ",
         "eventClue": "スイーツショップでなにかが見つかるかもしれない……",
         "eventOption": "まだ物足りない、もう少し注文しよう。"
+      },
+      "7": {
+        "charId": 144,
+        "eventId": 144303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "チトセ",
+        "charGrade": 5,
+        "enCharName": "Chitose",
+        "charColor": "#a87dc0",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水属性",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_144303",
+        "landmarkName": "マーケット",
+        "eventName": "嫉妬",
+        "eventClue": "マーケットでなにかが見つかるかもしれない……",
+        "eventOption": "あのあたりはまだ見てないな。"
       },
       "8": {
         "charId": 144,
@@ -5831,6 +6885,27 @@
         "eventName": "水平線の向こう",
         "eventClue": "港でなにかが見つかるかもしれない……",
         "eventOption": "小舟で海を観光してみよう。"
+      },
+      "14": {
+        "charId": 145,
+        "eventId": 145303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "オトハ",
+        "charGrade": 5,
+        "enCharName": "Otoha",
+        "charColor": "#90a1c6",
+        "charJob": "バランサー",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "闇属性",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_145303",
+        "landmarkName": "学園",
+        "eventName": "黄昏の中の学園",
+        "eventClue": "学園で\r\nなにかが見つかる\r\nかもしれない……",
+        "eventOption": "図書館に行ってみよう。"
       }
     },
     "147": {
@@ -6005,6 +7080,27 @@
         "eventName": "港釣りの達人",
         "eventClue": "港でなにかが見つかるかもしれない……",
         "eventOption": "いまから夜釣りでもする？"
+      },
+      "17": {
+        "charId": 150,
+        "eventId": 150304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "ラール",
+        "charGrade": 4,
+        "enCharName": "Laru",
+        "charColor": "#c5bbb5",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光属性",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_150304",
+        "landmarkName": "温泉リゾート",
+        "eventName": "温泉魚",
+        "eventClue": "温泉リゾートでなにかが見つかるかもしれない……",
+        "eventOption": "一緒に温泉に入ろう。"
       }
     },
     "155": {
@@ -6028,6 +7124,27 @@
         "eventName": "スリリングな水遊び",
         "eventClue": "洞窟で\r\nなにかが見つかる\r\nかもしれない……",
         "eventOption": "さらに奥へ進もう。"
+      },
+      "6": {
+        "charId": 155,
+        "eventId": 155303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "シア",
+        "charGrade": 5,
+        "enCharName": "Shia",
+        "charColor": "#c4a5e6",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光属性",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_155303",
+        "landmarkName": "スイーツショップ",
+        "eventName": "星ノ塔を見上げて",
+        "eventClue": "スイーツショップでなにかが見つかるかもしれない……",
+        "eventOption": "まだ物足りない、もう少し注文しよう。"
       },
       "8": {
         "charId": 155,
@@ -6161,6 +7278,27 @@
       }
     },
     "158": {
+      "5": {
+        "charId": 158,
+        "eventId": 158303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "ラール（聖夜）",
+        "charGrade": 5,
+        "enCharName": "Snowish Laru",
+        "charColor": "#79092e",
+        "charJob": "バランサー",
+        "charJobNum": 102,
+        "charEETNum": 2,
+        "charEET": "火属性",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_158303",
+        "landmarkName": "洞窟",
+        "eventName": "想像外の別世界",
+        "eventClue": "洞窟でなにかが見つかるかもしれない……",
+        "eventOption": "さらに奥へ進もう。"
+      },
       "7": {
         "charId": 158,
         "eventId": 158301,
@@ -6225,6 +7363,27 @@
         "eventName": "遺物を探して",
         "eventClue": "洞窟で\r\nなにかが見つかる\r\nかもしれない……",
         "eventOption": "さらに奥へ進もう。"
+      },
+      "6": {
+        "charId": 159,
+        "eventId": 159303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "クルニス（華服）",
+        "charGrade": 5,
+        "enCharName": "Springseek Coronis",
+        "charColor": "#c553a5",
+        "charJob": "バランサー",
+        "charJobNum": 102,
+        "charEETNum": 3,
+        "charEET": "地属性",
+        "charEETColor": "#a1673d",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_159303",
+        "landmarkName": "スイーツショップ",
+        "eventName": "ケーキの神秘",
+        "eventClue": "スイーツショップでなにかが見つかるかもしれない……",
+        "eventOption": "まだ物足りない、もう少し注文しよう。"
       },
       "7": {
         "charId": 159,
@@ -6291,6 +7450,50 @@
         "eventClue": "温泉リゾートでなにかが見つかるかもしれない……",
         "eventOption": "少し散策してこよう。"
       }
+    },
+    "162": {
+      "18": {
+        "charId": 162,
+        "eventId": 162301,
+        "branchTag": 1,
+        "landmarkId": 18,
+        "charName": "セイナ（原点）",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光属性",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162301",
+        "landmarkName": "フィラニス大通り",
+        "eventName": "悔しさ",
+        "eventClue": "フィラニス大通りでなにかが見つかるかもしれない……",
+        "eventOption": "のんびり散歩する。"
+      },
+      "20": {
+        "charId": 162,
+        "eventId": 162302,
+        "branchTag": 1,
+        "landmarkId": 20,
+        "charName": "セイナ（原点）",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "アタッカー",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光属性",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162302",
+        "landmarkName": "インスラ",
+        "eventName": "ぬくもり",
+        "eventClue": "インスラでなにかが見つかるかもしれない……",
+        "eventOption": "早く中に入ろう。"
+      }
     }
   },
   "KR": {
@@ -6336,6 +7539,27 @@
         "eventName": "식당에서 생긴 해프닝",
         "eventClue": "학원에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "배가 고프다. 식당에 가고 싶다."
+      },
+      "17": {
+        "charId": 103,
+        "eventId": 103304,
+        "branchTag": 2,
+        "landmarkId": 17,
+        "charName": "코하쿠",
+        "charGrade": 4,
+        "enCharName": "Amber",
+        "charColor": "#99d2d9",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "불 속성",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_103304",
+        "landmarkName": "온천 리조트",
+        "eventName": "탁구 대결",
+        "eventClue": "온천 리조트에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "함께 탁구를 하자."
       }
     },
     "107": {
@@ -6380,6 +7604,27 @@
         "eventName": "사건 해결",
         "eventClue": "시장에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "저게 뭐지? 수상하다."
+      },
+      "17": {
+        "charId": 107,
+        "eventId": 107303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "틸리아",
+        "charGrade": 4,
+        "enCharName": "Tilia",
+        "charColor": "#3d5bbf",
+        "charJob": "서포터",
+        "charJobNum": 103,
+        "charEETNum": 5,
+        "charEET": "빛 속성",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_107303",
+        "landmarkName": "온천 리조트",
+        "eventName": "저지당한 ‘특훈’",
+        "eventClue": "온천 리조트에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "함께 온천을 가자."
       }
     },
     "108": {
@@ -6448,6 +7693,27 @@
       }
     },
     "110": {
+      "7": {
+        "charId": 110,
+        "eventId": 110303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "피렌",
+        "charGrade": 5,
+        "enCharName": "Firenze",
+        "charColor": "#8db947",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 6,
+        "charEET": "어둠 속성",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_110303",
+        "landmarkName": "시장",
+        "eventName": "‘연인’ 쇼핑",
+        "eventClue": "시장에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "저곳은 아직 보지 않은 것 같다."
+      },
       "8": {
         "charId": 110,
         "eventId": 110302,
@@ -6533,6 +7799,27 @@
         "eventName": "책장 사이에서 나눈 이야기",
         "eventClue": "학원에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "도서관에 가서 살펴보자."
+      },
+      "17": {
+        "charId": 111,
+        "eventId": 111304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "아야메",
+        "charGrade": 4,
+        "enCharName": "Iris",
+        "charColor": "#9392ca",
+        "charJob": "밸런스",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "물 속성",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_111304",
+        "landmarkName": "온천 리조트",
+        "eventName": "어린애 같은 모습",
+        "eventClue": "온천 리조트에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "함께 온천을 가자."
       }
     },
     "112": {
@@ -6577,6 +7864,27 @@
         "eventName": "전문가",
         "eventClue": "시장에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "저곳에서 공연을 하는 것 같다."
+      },
+      "17": {
+        "charId": 112,
+        "eventId": 112303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "세이나",
+        "charGrade": 4,
+        "enCharName": "Noya",
+        "charColor": "#ffe39e",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "바람 속성",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_112303",
+        "landmarkName": "온천 리조트",
+        "eventName": "마이크 지배자의 탄생",
+        "eventClue": "온천 리조트에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "함께 온천을 가자."
       }
     },
     "113": {
@@ -6883,6 +8191,27 @@
         "eventName": "새로운 발굴",
         "eventClue": "동굴에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "가장 깊은 곳까지 탐험해 보자."
+      },
+      "7": {
+        "charId": 118,
+        "eventId": 118304,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "크루니스",
+        "charGrade": 4,
+        "enCharName": "Coronis",
+        "charColor": "#cfbf93",
+        "charJob": "밸런스",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "어둠 속성",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_118304",
+        "landmarkName": "시장",
+        "eventName": "다른 용도",
+        "eventClue": "시장에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "저곳은 아직 보지 않은 것 같다."
       },
       "14": {
         "charId": 118,
@@ -7297,6 +8626,27 @@
       }
     },
     "130": {
+      "5": {
+        "charId": 130,
+        "eventId": 130303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "토나",
+        "charGrade": 5,
+        "enCharName": "Donna",
+        "charColor": "#e9be88",
+        "charJob": "밸런스",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "물 속성",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_130303",
+        "landmarkName": "동굴",
+        "eventName": "날아가 버린 편지",
+        "eventClue": "동굴에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "가장 깊은 곳까지 탐험해 보자."
+      },
       "7": {
         "charId": 130,
         "eventId": 130301,
@@ -7447,6 +8797,27 @@
         "eventName": "멈추지 않는 물레방아",
         "eventClue": "항구에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "작은 배를 타고 바다를 둘러보자."
+      },
+      "14": {
+        "charId": 133,
+        "eventId": 133303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "나츠카",
+        "charGrade": 5,
+        "enCharName": "Nazuka",
+        "charColor": "#6fb1d2",
+        "charJob": "밸런스",
+        "charJobNum": 102,
+        "charEETNum": 4,
+        "charEET": "바람 속성",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_133303",
+        "landmarkName": "학원",
+        "eventName": "너를 위한 시",
+        "eventClue": "학원에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "도서관에 가서 살펴보자."
       }
     },
     "134": {
@@ -7491,6 +8862,27 @@
         "eventName": "일일 점장",
         "eventClue": "디저트 카페에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "아직 부족하다. 조금 더 주문하자."
+      },
+      "17": {
+        "charId": 134,
+        "eventId": 134303,
+        "branchTag": 3,
+        "landmarkId": 17,
+        "charName": "후유카",
+        "charGrade": 5,
+        "enCharName": "Fuyuka",
+        "charColor": "#f8be56",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "불 속성",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_134303",
+        "landmarkName": "온천 리조트",
+        "eventName": "몸에 좋은 우유",
+        "eventClue": "온천 리조트에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "함께 거닐자."
       }
     },
     "135": {
@@ -7797,6 +9189,27 @@
         "eventName": "반짝이는 유혹",
         "eventClue": "시장에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "저곳은 아직 보지 않은 것 같다."
+      },
+      "14": {
+        "charId": 142,
+        "eventId": 142303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "코제트",
+        "charGrade": 4,
+        "enCharName": "Cosette",
+        "charColor": "#7795d8",
+        "charJob": "서포터",
+        "charJobNum": 103,
+        "charEETNum": 6,
+        "charEET": "어둠 속성",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_142303",
+        "landmarkName": "학원",
+        "eventName": "공부",
+        "eventClue": "학원에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "도서관에 가서 살펴보자."
       }
     },
     "143": {
@@ -7820,6 +9233,27 @@
         "eventName": "‘온’천?",
         "eventClue": "동굴에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "가장 깊은 곳까지 탐험해 보자."
+      },
+      "6": {
+        "charId": 143,
+        "eventId": 143303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "레이스",
+        "charGrade": 5,
+        "enCharName": "Wraith",
+        "charColor": "#5e6cb5",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "바람 속성",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_143303",
+        "landmarkName": "디저트 카페",
+        "eventName": "수박 아이스바",
+        "eventClue": "디저트 카페에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "아직 부족하다. 조금 더 주문하자."
       },
       "7": {
         "charId": 143,
@@ -7864,6 +9298,27 @@
         "eventName": "달콤하게 단련된 칼",
         "eventClue": "디저트 카페에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "아직 부족하다. 조금 더 주문하자."
+      },
+      "7": {
+        "charId": 144,
+        "eventId": 144303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "치토세",
+        "charGrade": 5,
+        "enCharName": "Chitose",
+        "charColor": "#a87dc0",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "물 속성",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_144303",
+        "landmarkName": "시장",
+        "eventName": "질투심",
+        "eventClue": "시장에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "저곳은 아직 보지 않은 것 같다."
       },
       "8": {
         "charId": 144,
@@ -7929,6 +9384,27 @@
         "eventName": "수평선 너머",
         "eventClue": "항구에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "작은 배를 타고 바다를 둘러보자."
+      },
+      "14": {
+        "charId": 145,
+        "eventId": 145303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "오토하",
+        "charGrade": 5,
+        "enCharName": "Otoha",
+        "charColor": "#90a1c6",
+        "charJob": "밸런스",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "어둠 속성",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_145303",
+        "landmarkName": "학원",
+        "eventName": "학원에서의 약속",
+        "eventClue": "학원에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "도서관에 가서 살펴보자."
       }
     },
     "147": {
@@ -8103,6 +9579,27 @@
         "eventName": "항구 낚시 가이드",
         "eventClue": "항구에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "지금 밤낚시를 해 볼까?"
+      },
+      "17": {
+        "charId": 150,
+        "eventId": 150304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "라루",
+        "charGrade": 4,
+        "enCharName": "Laru",
+        "charColor": "#c5bbb5",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "빛 속성",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_150304",
+        "landmarkName": "온천 리조트",
+        "eventName": "온천 물고기",
+        "eventClue": "온천 리조트에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "함께 온천을 가자."
       }
     },
     "155": {
@@ -8126,6 +9623,27 @@
         "eventName": "지하의 표류",
         "eventClue": "동굴에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "가장 깊은 곳까지 탐험해 보자."
+      },
+      "6": {
+        "charId": 155,
+        "eventId": 155303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "시아",
+        "charGrade": 5,
+        "enCharName": "Shia",
+        "charColor": "#c4a5e6",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "빛 속성",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_155303",
+        "landmarkName": "디저트 카페",
+        "eventName": "별의 탑을 올려다보며",
+        "eventClue": "디저트 카페에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "아직 부족하다. 조금 더 주문하자."
       },
       "8": {
         "charId": 155,
@@ -8259,6 +9777,27 @@
       }
     },
     "158": {
+      "5": {
+        "charId": 158,
+        "eventId": 158303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "라루(이브)",
+        "charGrade": 5,
+        "enCharName": "Snowish Laru",
+        "charColor": "#79092e",
+        "charJob": "밸런스",
+        "charJobNum": 102,
+        "charEETNum": 2,
+        "charEET": "불 속성",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_158303",
+        "landmarkName": "동굴",
+        "eventName": "새로운 세상",
+        "eventClue": "동굴에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "가장 깊은 곳까지 탐험해 보자."
+      },
       "7": {
         "charId": 158,
         "eventId": 158301,
@@ -8323,6 +9862,27 @@
         "eventName": "“토템을 찾아서”",
         "eventClue": "동굴에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "가장 깊은 곳까지 탐험해 보자."
+      },
+      "6": {
+        "charId": 159,
+        "eventId": 159303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "크루니스(새해)",
+        "charGrade": 5,
+        "enCharName": "Springseek Coronis",
+        "charColor": "#c553a5",
+        "charJob": "밸런스",
+        "charJobNum": 102,
+        "charEETNum": 3,
+        "charEET": "땅 속성",
+        "charEETColor": "#a1673d",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_159303",
+        "landmarkName": "디저트 카페",
+        "eventName": "케이크의 비밀",
+        "eventClue": "디저트 카페에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "아직 부족하다. 조금 더 주문하자."
       },
       "7": {
         "charId": 159,
@@ -8389,6 +9949,50 @@
         "eventClue": "온천 리조트에서 뭔가 특별한 일이 일어날지도 모른다……",
         "eventOption": "함께 거닐자."
       }
+    },
+    "162": {
+      "18": {
+        "charId": 162,
+        "eventId": 162301,
+        "branchTag": 1,
+        "landmarkId": 18,
+        "charName": "세이나(기원)",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "빛 속성",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162301",
+        "landmarkName": "필라니스 거리",
+        "eventName": "분한 마음",
+        "eventClue": "필라니스에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "천천히 산책한다."
+      },
+      "20": {
+        "charId": 162,
+        "eventId": 162302,
+        "branchTag": 1,
+        "landmarkId": 20,
+        "charName": "세이나(기원)",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "딜러",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "빛 속성",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162302",
+        "landmarkName": "인술라",
+        "eventName": "온기",
+        "eventClue": "인술라에서 뭔가 특별한 일이 일어날지도 모른다……",
+        "eventOption": "어서 안으로 들어가자."
+      }
     }
   },
   "TW": {
@@ -8434,6 +10038,27 @@
         "eventName": "打菜奇遇",
         "eventClue": "在學院或許會發現些什麼…",
         "eventOption": "餓了，想去餐廳。"
+      },
+      "17": {
+        "charId": 103,
+        "eventId": 103304,
+        "branchTag": 2,
+        "landmarkId": 17,
+        "charName": "琥珀",
+        "charGrade": 4,
+        "enCharName": "Amber",
+        "charColor": "#99d2d9",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "火系",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_103304",
+        "landmarkName": "溫泉渡假村",
+        "eventName": "球桌對決",
+        "eventClue": "在溫泉渡假村或許會發現些什麼…",
+        "eventOption": "一起來玩彈彈球吧。"
       }
     },
     "107": {
@@ -8478,6 +10103,27 @@
         "eventName": "當場破案",
         "eventClue": "在市集或許會發現些什麼…",
         "eventOption": "那是什麼？好可疑啊。"
+      },
+      "17": {
+        "charId": 107,
+        "eventId": 107303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "緹莉婭",
+        "charGrade": 4,
+        "enCharName": "Tilia",
+        "charColor": "#3d5bbf",
+        "charJob": "輔助",
+        "charJobNum": 103,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_107303",
+        "landmarkName": "溫泉渡假村",
+        "eventName": "被阻止的「特訓」",
+        "eventClue": "在溫泉渡假村或許會發現些什麼…",
+        "eventOption": "一起去泡溫泉吧。"
       }
     },
     "108": {
@@ -8546,6 +10192,27 @@
       }
     },
     "110": {
+      "7": {
+        "charId": 110,
+        "eventId": 110303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "翡冷翠",
+        "charGrade": 5,
+        "enCharName": "Firenze",
+        "charColor": "#8db947",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 6,
+        "charEET": "暗系",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_110303",
+        "landmarkName": "市集",
+        "eventName": "「情侶」逛街",
+        "eventClue": "在市集或許會發現些什麼…",
+        "eventOption": "那一片還沒有逛過。"
+      },
       "8": {
         "charId": 110,
         "eventId": 110302,
@@ -8631,6 +10298,27 @@
         "eventName": "書間閒談",
         "eventClue": "在學院或許會發現些什麼…",
         "eventOption": "去圖書館逛逛。"
+      },
+      "17": {
+        "charId": 111,
+        "eventId": 111304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "鳶尾",
+        "charGrade": 4,
+        "enCharName": "Iris",
+        "charColor": "#9392ca",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_111304",
+        "landmarkName": "溫泉渡假村",
+        "eventName": "孩子氣",
+        "eventClue": "在溫泉渡假村或許會發現些什麼…",
+        "eventOption": "一起去泡溫泉吧。"
       }
     },
     "112": {
@@ -8675,6 +10363,27 @@
         "eventName": "專業人士",
         "eventClue": "在市集或許會發現些什麼…",
         "eventOption": "那邊好像有表演。"
+      },
+      "17": {
+        "charId": 112,
+        "eventId": 112303,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "塵沙",
+        "charGrade": 4,
+        "enCharName": "Noya",
+        "charColor": "#ffe39e",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "風系",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_112303",
+        "landmarkName": "溫泉渡假村",
+        "eventName": "K歌之王的誕生",
+        "eventClue": "在溫泉渡假村或許會發現些什麼…",
+        "eventOption": "一起去泡溫泉吧。"
       }
     },
     "113": {
@@ -8981,6 +10690,27 @@
         "eventName": "新鮮出土",
         "eventClue": "在洞窟或許會發現些什麼…",
         "eventOption": "繼續向更深處探索。"
+      },
+      "7": {
+        "charId": 118,
+        "eventId": 118304,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "柯洛妮絲",
+        "charGrade": 4,
+        "enCharName": "Coronis",
+        "charColor": "#cfbf93",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "暗系",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_118304",
+        "landmarkName": "市集",
+        "eventName": "另有他用",
+        "eventClue": "在市集或許會發現些什麼…",
+        "eventOption": "那一片還沒有逛過。"
       },
       "14": {
         "charId": 118,
@@ -9395,6 +11125,27 @@
       }
     },
     "130": {
+      "5": {
+        "charId": 130,
+        "eventId": 130303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "多娜",
+        "charGrade": 5,
+        "enCharName": "Donna",
+        "charColor": "#e9be88",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_130303",
+        "landmarkName": "洞窟",
+        "eventName": "飛走的信",
+        "eventClue": "在洞窟或許會發現些什麼…",
+        "eventOption": "繼續向更深處探索。"
+      },
       "7": {
         "charId": 130,
         "eventId": 130301,
@@ -9545,6 +11296,27 @@
         "eventName": "水車轉不停",
         "eventClue": "在港口或許會發現些什麼…",
         "eventOption": "來一次小船臨海觀光。"
+      },
+      "14": {
+        "charId": 133,
+        "eventId": 133303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "夏花",
+        "charGrade": 5,
+        "enCharName": "Nazuka",
+        "charColor": "#6fb1d2",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 4,
+        "charEET": "風系",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_133303",
+        "landmarkName": "學院",
+        "eventName": "為你吟詩",
+        "eventClue": "在學院或許會發現些什麼…",
+        "eventOption": "去圖書館逛逛。"
       }
     },
     "134": {
@@ -9589,6 +11361,27 @@
         "eventName": "一日店長",
         "eventClue": "在甜點店或許會發現些什麼…",
         "eventOption": "沒嘗夠，再點一些。"
+      },
+      "17": {
+        "charId": 134,
+        "eventId": 134303,
+        "branchTag": 3,
+        "landmarkId": 17,
+        "charName": "冬香",
+        "charGrade": 5,
+        "enCharName": "Fuyuka",
+        "charColor": "#f8be56",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 2,
+        "charEET": "火系",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_134303",
+        "landmarkName": "溫泉渡假村",
+        "eventName": "牛奶有益健康",
+        "eventClue": "在溫泉渡假村或許會發現些什麼…",
+        "eventOption": "閒逛一會。"
       }
     },
     "135": {
@@ -9895,6 +11688,27 @@
         "eventName": "閃爍的誘惑",
         "eventClue": "在市集或許會發現些什麼…",
         "eventOption": "那一片還沒有逛過。"
+      },
+      "14": {
+        "charId": 142,
+        "eventId": 142303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "珂賽特",
+        "charGrade": 4,
+        "enCharName": "Cosette",
+        "charColor": "#7795d8",
+        "charJob": "輔助",
+        "charJobNum": 103,
+        "charEETNum": 6,
+        "charEET": "暗系",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#41cbaf",
+        "eventCg": "DatingSPCG_142303",
+        "landmarkName": "學院",
+        "eventName": "上課",
+        "eventClue": "在學院或許會發現些什麼…",
+        "eventOption": "去圖書館逛逛。"
       }
     },
     "143": {
@@ -9918,6 +11732,27 @@
         "eventName": "「溫」泉？",
         "eventClue": "在洞窟或許會發現些什麼…",
         "eventOption": "繼續向更深處探索。"
+      },
+      "6": {
+        "charId": 143,
+        "eventId": 143303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "風影",
+        "charGrade": 5,
+        "enCharName": "Wraith",
+        "charColor": "#5e6cb5",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 4,
+        "charEET": "風系",
+        "charEETColor": "#87bf10",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_143303",
+        "landmarkName": "甜點店",
+        "eventName": "西瓜冰",
+        "eventClue": "在甜點店或許會發現些什麼…",
+        "eventOption": "沒嘗夠，再點一些。"
       },
       "7": {
         "charId": 143,
@@ -9962,6 +11797,27 @@
         "eventName": "糖淬緞刀",
         "eventClue": "在甜點店或許會發現些什麼…",
         "eventOption": "沒嘗夠，再點一些。"
+      },
+      "7": {
+        "charId": 144,
+        "eventId": 144303,
+        "branchTag": 4,
+        "landmarkId": 7,
+        "charName": "千都世",
+        "charGrade": 5,
+        "enCharName": "Chitose",
+        "charColor": "#a87dc0",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 1,
+        "charEET": "水系",
+        "charEETColor": "#4e9fd8",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_144303",
+        "landmarkName": "市集",
+        "eventName": "嫉妒心理",
+        "eventClue": "在市集或許會發現些什麼…",
+        "eventOption": "那一片還沒有逛過。"
       },
       "8": {
         "charId": 144,
@@ -10027,6 +11883,27 @@
         "eventName": "海平線之外",
         "eventClue": "在港口或許會發現些什麼…",
         "eventOption": "來一次小船臨海觀光。"
+      },
+      "14": {
+        "charId": 145,
+        "eventId": 145303,
+        "branchTag": 2,
+        "landmarkId": 14,
+        "charName": "乙葉",
+        "charGrade": 5,
+        "enCharName": "Otoha",
+        "charColor": "#90a1c6",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 6,
+        "charEET": "暗系",
+        "charEETColor": "#b15f9f",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_145303",
+        "landmarkName": "學院",
+        "eventName": "學院之約",
+        "eventClue": "在學院或許會發現些什麼…",
+        "eventOption": "去圖書館逛逛。"
       }
     },
     "147": {
@@ -10201,6 +12078,27 @@
         "eventName": "港口釣魚指南",
         "eventClue": "在港口或許會發現些什麼…",
         "eventOption": "要不要立刻來一場夜釣？"
+      },
+      "17": {
+        "charId": 150,
+        "eventId": 150304,
+        "branchTag": 1,
+        "landmarkId": 17,
+        "charName": "菈露",
+        "charGrade": 4,
+        "enCharName": "Laru",
+        "charColor": "#c5bbb5",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_150304",
+        "landmarkName": "溫泉渡假村",
+        "eventName": "溫泉魚",
+        "eventClue": "在溫泉渡假村或許會發現些什麼…",
+        "eventOption": "一起去泡溫泉吧。"
       }
     },
     "155": {
@@ -10224,6 +12122,27 @@
         "eventName": "暗河漂流",
         "eventClue": "在洞窟或許會發現些什麼…",
         "eventOption": "繼續向更深處探索。"
+      },
+      "6": {
+        "charId": 155,
+        "eventId": 155303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "希婭",
+        "charGrade": 5,
+        "enCharName": "Shia",
+        "charColor": "#c4a5e6",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_155303",
+        "landmarkName": "甜點店",
+        "eventName": "仰望星塔",
+        "eventClue": "在甜點店或許會發現些什麼…",
+        "eventOption": "沒嘗夠，再點一些。"
       },
       "8": {
         "charId": 155,
@@ -10357,6 +12276,27 @@
       }
     },
     "158": {
+      "5": {
+        "charId": 158,
+        "eventId": 158303,
+        "branchTag": 1,
+        "landmarkId": 5,
+        "charName": "聖夜菈露",
+        "charGrade": 5,
+        "enCharName": "Snowish Laru",
+        "charColor": "#79092e",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 2,
+        "charEET": "火系",
+        "charEETColor": "#ef522e",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_158303",
+        "landmarkName": "洞窟",
+        "eventName": "別有洞天",
+        "eventClue": "在洞窟或許會發現些什麼…",
+        "eventOption": "繼續向更深處探索。"
+      },
       "7": {
         "charId": 158,
         "eventId": 158301,
@@ -10422,6 +12362,27 @@
         "eventClue": "在洞窟或許會發現些什麼…",
         "eventOption": "繼續向更深處探索。"
       },
+      "6": {
+        "charId": 159,
+        "eventId": 159303,
+        "branchTag": 2,
+        "landmarkId": 6,
+        "charName": "緋春柯洛妮絲",
+        "charGrade": 5,
+        "enCharName": "Springseek Coronis",
+        "charColor": "#c553a5",
+        "charJob": "均衡",
+        "charJobNum": 102,
+        "charEETNum": 3,
+        "charEET": "地系",
+        "charEETColor": "#a1673d",
+        "charTagColor": "#7d81e3",
+        "eventCg": "DatingSPCG_159303",
+        "landmarkName": "甜點店",
+        "eventName": "蛋糕的奧祕",
+        "eventClue": "在甜點店或許會發現些什麼…",
+        "eventOption": "沒嘗夠，再點一些。"
+      },
       "7": {
         "charId": 159,
         "eventId": 159302,
@@ -10486,6 +12447,50 @@
         "eventName": "在你身旁",
         "eventClue": "在溫泉渡假村或許會發現些什麼…",
         "eventOption": "閒逛一會。"
+      }
+    },
+    "162": {
+      "18": {
+        "charId": 162,
+        "eventId": 162301,
+        "branchTag": 1,
+        "landmarkId": 18,
+        "charName": "破曉塵沙",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162301",
+        "landmarkName": "菲蘭尼斯大街",
+        "eventName": "不甘心",
+        "eventClue": "在菲蘭尼斯大街上或許會發現些什麼…",
+        "eventOption": "慢慢散步。"
+      },
+      "20": {
+        "charId": 162,
+        "eventId": 162302,
+        "branchTag": 1,
+        "landmarkId": 20,
+        "charName": "破曉塵沙",
+        "charGrade": 5,
+        "enCharName": "Firstlight Noya",
+        "charColor": "#ffddb1",
+        "charJob": "先鋒",
+        "charJobNum": 101,
+        "charEETNum": 5,
+        "charEET": "光系",
+        "charEETColor": "#f3b521",
+        "charTagColor": "#db6893",
+        "eventCg": "DatingSPCG_162302",
+        "landmarkName": "因蘇拉",
+        "eventName": "暖意",
+        "eventClue": "在因蘇拉或許會發現些什麼…",
+        "eventOption": "快點進屋吧。"
       }
     }
   }
